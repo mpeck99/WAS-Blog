@@ -8,10 +8,13 @@ description: Here is a simple blog built with 11ty to showcase my journey in obt
 {% for post in collections.posts %}
 <article aria-labelledby="{{post.fileSlug}}">
     <header>
-      <h2 id="{{post.fileSlug}}"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-  <time> {{ post.date | postDate }}</time>
+      <h2 id="{{post.fileSlug}}">{{ post.data.title }}</h2>
+    <time> {{ post.date | postDate }}</time>
     </header>
-    <div class="content"></content>
+    <div class="content">
+      <p>{{ post.data.intro }}</p>
+      <a class="btn btn-link" title="Read about {{post.data.title}}" href="{{ post.url }}">Read more</a>
+    </div>
 </article> 
 {% endfor %}
 </div>
