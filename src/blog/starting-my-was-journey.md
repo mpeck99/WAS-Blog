@@ -1,6 +1,7 @@
 ---
 title: Starting my WAS Certification Journey
 date: Created
+intro: Hello all! My name is Morgan Peck and welcome to my blog detailing my journey in earning my Web Accessibility Specialist certificaiton through IAAP.
 ---
 Hello all! My name is Morgan Peck and welcome to my blog detailing my journey in earning my [Web Accessibility Specialist certificaiton through IAAP](https://www.accessibilityassociation.org/wascertification). 
 
