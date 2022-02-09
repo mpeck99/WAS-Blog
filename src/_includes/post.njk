@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+
+<article aria-labelledby="title">
+  <header>
+    <h2 id="title">{{ title }}</h2>
+  </header>
+  <div class="content">
+      {{ content | safe }}
+  </div>
+</article>
