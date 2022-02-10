@@ -49,6 +49,7 @@ ul, ol {
     margin-bottom: 1rem;
   }
 }
+
 .site-header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -60,7 +61,6 @@ ul, ol {
   padding: 1rem 2rem;
 
   background: $black;
-  border-bottom: 0.5rem solid $blue;
 
   color: $white;
 
@@ -77,6 +77,7 @@ ul, ol {
 
     background: linear-gradient(to right, $black, $blue, $purple, $green, $orange, $yellow, $orange, $green, $purple, $blue, $black);
   }
+
   a {
     text-decoration: none;
 
@@ -101,6 +102,7 @@ ul, ol {
     grid-column: 2 / 3;
 
     justify-self: flex-end;
+
     ul {
       display: flex;
       
@@ -115,6 +117,7 @@ ul, ol {
     }
   }
 }
+
 .banner {
   min-height: 12rem;
 
@@ -127,66 +130,117 @@ ul, ol {
 
   padding: 3rem 2rem 1rem 2rem;
 
-  background-color: $orange;
+  background: lighten($black, 5%);
 
   text-align: center;
 
   h2 {
     margin: 0;
   }
-
-  &:after {
-    content: '';
-    
-    width: 100%;
-    height: 3rem;
-
-    position: absolute;
-    bottom: -2.5rem;
-
-    background: $orange;
-    clip-path: polygon(100% 0%, 0% 0% , 0% 62.00%, 1% 61.96%, 2% 61.83%, 3% 61.63%, 4% 61.34%, 5% 60.97%, 6% 60.53%, 7% 60.02%, 8% 59.43%, 9% 58.78%, 10% 58.07%, 11% 57.30%, 12% 56.48%, 13% 55.62%, 14% 54.72%, 15% 53.78%, 16% 52.82%, 17% 51.84%, 18% 50.85%, 19% 49.85%, 20% 48.85%, 21% 47.86%, 22% 46.89%, 23% 45.93%, 24% 45.01%, 25% 44.12%, 26% 43.27%, 27% 42.46%, 28% 41.71%, 29% 41.02%, 30% 40.39%, 31% 39.82%, 32% 39.33%, 33% 38.91%, 34% 38.57%, 35% 38.30%, 36% 38.12%, 37% 38.02%, 38% 38.00%, 39% 38.07%, 40% 38.22%, 41% 38.45%, 42% 38.76%, 43% 39.15%, 44% 39.62%, 45% 40.15%, 46% 40.76%, 47% 41.43%, 48% 42.16%, 49% 42.94%, 50% 43.77%, 51% 44.65%, 52% 45.56%, 53% 46.50%, 54% 47.47%, 55% 48.46%, 56% 49.45%, 57% 50.45%, 58% 51.45%, 59% 52.43%, 60% 53.40%, 61% 54.35%, 62% 55.27%, 63% 56.15%, 64% 56.98%, 65% 57.77%, 66% 58.50%, 67% 59.18%, 68% 59.79%, 69% 60.33%, 70% 60.81%, 71% 61.20%, 72% 61.52%, 73% 61.76%, 74% 61.92%, 75% 61.99%, 76% 61.98%, 77% 61.89%, 78% 61.72%, 79% 61.46%, 80% 61.13%, 81% 60.72%, 82% 60.23%, 83% 59.67%, 84% 59.05%, 85% 58.36%, 86% 57.61%, 87% 56.82%, 88% 55.97%, 89% 55.08%, 90% 54.16%, 91% 53.21%, 92% 52.23%, 93% 51.25%, 94% 50.25%, 95% 49.25%, 96% 48.25%, 97% 47.27%, 98% 46.31%, 99% 45.37%, 100% 44.47%);
-
-  }
 }
 
 .article-wrapper {
+  max-width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
   padding: 2rem;
-  margin-top: 3rem;
 
   article {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 25rem;
 
     padding: 1rem;
-
-    border: 0.25rem solid $blue;
-    border-radius: 0.5rem;
+    margin: 1rem;
 
     position: relative;
+
+    background-color: $white;
+    color: $black;
 
     .btn-link {
       position: absolute;
 
       left: 0.5rem;
       bottom: 0.55rem;
-    }
+    } 
+    
+      $colors: $blue, $orange, $yellow, $green, $purple;
+      
+      @for $i from 1 through length($colors) {
+        &:nth-child(#{$i}) {
+          header {
+            background: nth($colors, $i);
+
+            position: relative;
+
+            &:after {
+              content: '';
+              
+              width: 100%;
+              height: 3rem;
+          
+              position: absolute;
+              bottom: -2.5rem;
+              left: 0;
+          
+              background: nth($colors, $i);
+              clip-path: polygon(100% 0%, 0% 0% , 0% 62.00%, 1% 61.96%, 2% 61.83%, 3% 61.63%, 4% 61.34%, 5% 60.97%, 6% 60.53%, 7% 60.02%, 8% 59.43%, 9% 58.78%, 10% 58.07%, 11% 57.30%, 12% 56.48%, 13% 55.62%, 14% 54.72%, 15% 53.78%, 16% 52.82%, 17% 51.84%, 18% 50.85%, 19% 49.85%, 20% 48.85%, 21% 47.86%, 22% 46.89%, 23% 45.93%, 24% 45.01%, 25% 44.12%, 26% 43.27%, 27% 42.46%, 28% 41.71%, 29% 41.02%, 30% 40.39%, 31% 39.82%, 32% 39.33%, 33% 38.91%, 34% 38.57%, 35% 38.30%, 36% 38.12%, 37% 38.02%, 38% 38.00%, 39% 38.07%, 40% 38.22%, 41% 38.45%, 42% 38.76%, 43% 39.15%, 44% 39.62%, 45% 40.15%, 46% 40.76%, 47% 41.43%, 48% 42.16%, 49% 42.94%, 50% 43.77%, 51% 44.65%, 52% 45.56%, 53% 46.50%, 54% 47.47%, 55% 48.46%, 56% 49.45%, 57% 50.45%, 58% 51.45%, 59% 52.43%, 60% 53.40%, 61% 54.35%, 62% 55.27%, 63% 56.15%, 64% 56.98%, 65% 57.77%, 66% 58.50%, 67% 59.18%, 68% 59.79%, 69% 60.33%, 70% 60.81%, 71% 61.20%, 72% 61.52%, 73% 61.76%, 74% 61.92%, 75% 61.99%, 76% 61.98%, 77% 61.89%, 78% 61.72%, 79% 61.46%, 80% 61.13%, 81% 60.72%, 82% 60.23%, 83% 59.67%, 84% 59.05%, 85% 58.36%, 86% 57.61%, 87% 56.82%, 88% 55.97%, 89% 55.08%, 90% 54.16%, 91% 53.21%, 92% 52.23%, 93% 51.25%, 94% 50.25%, 95% 49.25%, 96% 48.25%, 97% 47.27%, 98% 46.31%, 99% 45.37%, 100% 44.47%);
+          
+            }
+          }
+
+          .btn-link {
+            &:hover, &:focus {
+              border-color: nth($colors, $i);
+            }
+          }
+        }
+     }
+
+     header {
+       min-height: 5rem;
+
+       padding: 1.25rem;
+       margin-bottom: 2.5rem;
+       margin-left: -1rem;
+       margin-top: -1rem;
+       margin-right: -1rem;
+       
+       h2 {
+         margin: 0;
+
+         font-size: 1.25rem;
+       }
+     }
   }
 }
 
 .btn-link {
-  padding: 0.75rem 1.25rem;
+  padding: 0.25rem 1rem;
 
   background-color: $black;
   border-radius: 25rem;
 
   font-weight: 700;
-  color: $yellow;
+  color: $white;
   text-decoration: none;
+  font-size: 1rem;
+
+  border: 0.2rem solid $white;
 
   &:hover, &:focus {
     text-decoration: underline;
-    color: $black;
-    background-color: $yellow;
+    color: $white;
+    background-color: $black;
+    
+    opacity: 0.9;
   }
 }
+
+.article-single {
+  padding: 2rem;
+}
+
