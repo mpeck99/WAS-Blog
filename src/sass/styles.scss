@@ -2,11 +2,16 @@
 
 // Variables
 $black: #333;
-$orange: #F67E7D;
-$white: #FFFBFF;
-$blue: #2E86AB;
-$yellow: #ECD444;
+$orange: #FE6D73;
+$white: #FEF9EF;
+$blue: #2a9bc4;
+$yellow: #FFCB77;
+$green: #17C3B2;
+$purple: #94849B;
 
+html, body {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
