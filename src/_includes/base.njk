@@ -17,16 +17,20 @@
       </ul>
     </nav>
   </header>
-  <main>
-    {% if (pageLayout == 'base') %}
+  {% if (pageLayout == 'base') %}
+    <main>
       <div class="banner">
         <h2>{{title}}</h2>
         <p>{{description}}</p>
       </div>
+    </main>
       {{ content | safe }} 
      {% else %}
+     <main class="article-single">
       {{ content | safe }}
-     {% endif %}
-  </main>
+    </main>
+      
+   
+  {% endif %}
 </body>
 </html>
