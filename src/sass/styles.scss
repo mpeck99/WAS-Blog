@@ -36,6 +36,19 @@ h6 {
   font-weight: 900;
 }
 
+a, a:visited {
+  color: $yellow;
+
+  &:hover, &:focus {
+    color: $orange;
+  }
+}
+
+ul, ol {
+  li {
+    margin-bottom: 1rem;
+  }
+}
 .site-header {
   display: flex;
   align-items: center;
