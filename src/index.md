@@ -5,9 +5,9 @@ description: Here is a simple blog built with 11ty to showcase my journey in obt
 --- 
 
 <div class="article-wrapper">
-{% for post in collections.posts %}
+{% for post in collections.posts reversed limit:5 %}
 <article aria-labelledby="{{post.fileSlug}}">
-    <header>
+    <header class="article-header">
       <h2 id="{{post.fileSlug}}">{{ post.data.title }}</h2>
     <time> {{ post.date | postDate }}</time>
     </header>
