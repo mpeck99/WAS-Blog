@@ -5,6 +5,7 @@ layout: base.njk
 <article aria-labelledby="title">
   <header>
     <h2 id="title">{{ title }}</h2>
+    <time> {{ page.date | postDate }}</time>
   </header>
   <div class="content">
       {{ content | safe }}
