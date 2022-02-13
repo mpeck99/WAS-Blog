@@ -2,12 +2,12 @@
 
 // Variables
 $black: #333;
-$orange: #FE6D73;
+$pink: #FE6D73;
 $white: #FEF9EF;
-$blue: #2a9bc4;
+$blue: #41b6e6;
 $yellow: #FFCB77;
 $green: #17C3B2;
-$purple: #94849B;
+$purple: #C794AF;
 
 html, body {
   box-sizing: border-box;
@@ -40,7 +40,7 @@ a, a:visited {
   color: $yellow;
 
   &:hover, &:focus {
-    color: $orange;
+    color: $pink;
   }
 }
 
@@ -75,7 +75,7 @@ ul, ol {
 
     z-index: 2;
 
-    background: linear-gradient(to right, $black, $blue, $purple, $green, $orange, $yellow, $orange, $green, $purple, $blue, $black);
+    background: linear-gradient(to right, $black, $blue, $purple, $green, $pink, $yellow, $pink, $green, $purple, $blue, $black);
   }
 
   a {
@@ -150,7 +150,9 @@ ul, ol {
 
   article {
     width: 18rem;
-    height: 25rem;
+    min-height: 15rem;
+
+    flex: 1 0 auto;
 
     padding: 1rem;
     margin: 1rem;
@@ -160,6 +162,10 @@ ul, ol {
     background-color: $white;
     color: $black;
 
+    p {
+      margin-bottom: 3rem;
+    }
+
     .btn-link {
       position: absolute;
 
@@ -167,7 +173,7 @@ ul, ol {
       bottom: 0.55rem;
     } 
     
-      $colors: $blue, $orange, $yellow, $green, $purple;
+      $colors: $blue, $pink, $yellow, $green, $purple;
       
       @for $i from 1 through length($colors) {
         &:nth-child(#{$i}) {
@@ -216,6 +222,10 @@ ul, ol {
          margin: 0;
 
          font-size: 1.25rem;
+       }
+
+       time {
+         font-weight: 700;
        }
      }
   }
