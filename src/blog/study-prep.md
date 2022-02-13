@@ -1,6 +1,6 @@
 ---
 title: And it begins!
-date: Created
+date: 2022-02-10
 intro: I have started diving into the the resources provided by IAAP to try and layout how and what I should study the material.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Accessibility fundamentals - Vision Disabilities
-date: Created
+date: 2022-02-13
 intro: Today I have started my dive into Deque's WAS Preparation course in learning about Accessibility Fundamentals - Disabilities, Guidelines, and Laws.
 tags: ['vision', 'disabilities', 'fundamentals']
 ---
