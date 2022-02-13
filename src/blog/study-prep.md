@@ -12,6 +12,7 @@ I am not going to lie looking at all the material together I am a little itimida
 * Read through the content outline to narrow down the fields I think I should spend more time on
 * Download the Book of Knowledge and begin going through it
 * Started reading about the Web Content Accessibilty Guidelines (WCAG) 2.1
+* Enrolled in Deque's WAS Preparation course
 
 ### Resources
 * [ WAS 2.1 Body of Knowledge](https://www.accessibilityassociation.org/resource/WAS_Certification_FInal_2020_FINAL)
