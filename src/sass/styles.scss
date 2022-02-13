@@ -17,7 +17,12 @@ html, body {
 }
 
 body {
+  height: 100vh;
+
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
 
   font-family: $ff-body;
   font-weight: 400;
@@ -130,6 +135,59 @@ ul, ol {
         margin-right: 1rem;
 
         font-weight: 700;
+      }
+    }
+  }
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding: 1rem;
+
+  text-align: center;  
+  
+  p {
+    margin: 0 0 0.5rem 0;
+  }
+
+  @media (max-width: 767px){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.social-media-list {
+  display: flex;
+  list-style-type: none;
+
+  margin: 0;
+  padding-left: 0;
+  
+  svg {
+    height: 2rem;
+    fill: $blue;
+  }
+
+  li {
+    margin-bottom: 0;
+
+    &:not(:last-child){
+      margin-right: 1rem;
+    }
+
+    a {
+      &:hover, &:focus {
+        svg {
+          fill: $pink;
+        }
       }
     }
   }
@@ -267,6 +325,9 @@ ul, ol {
 }
 
 .article-single {
+  max-width: 1400px;
+
+  margin: 0 auto;
   padding: 2rem;
 }
 
@@ -321,4 +382,13 @@ ul, ol {
 
 #title {
   margin-bottom: 0.25rem;
+}
+
+.float-right {
+  float: right;
+  margin-left: 2rem;
+}
+
+img {
+  border: $blue 0.25rem solid;
 }
