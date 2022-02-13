@@ -13,7 +13,7 @@ description: Here is a simple blog built with 11ty to showcase my journey in obt
     </header>
     <div class="content">
       <p>{{ post.data.intro }}</p>
-      <a class="btn btn-link" title="Read about {{post.data.title}}" href="{{ post.url }}">Read more</a>
+      <a class="btn btn-link" title="Read about {{post.data.title}}" href="{{ post.url }}" aria-label="Read more about {{post.data.title}}">Read more</a>
     </div>
 </article> 
 {% endfor %}
