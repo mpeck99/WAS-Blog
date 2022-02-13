@@ -219,6 +219,10 @@ ul, ol {
        }
      }
   }
+
+  @media (max-width: 767px){
+    justify-content: center;
+  }
 }
 
 .btn-link {
