@@ -9,6 +9,9 @@ $yellow: #FFCB77;
 $green: #17C3B2;
 $purple: #C794AF;
 
+$ff-heading: 'Rubik', sans-serif;
+$ff-body: 'Montserrat', sans-serif;
+
 html, body {
   box-sizing: border-box;
 }
@@ -16,7 +19,7 @@ html, body {
 body {
   margin: 0;
 
-  font-family: 'Work Sans', sans-serif;
+  font-family: $ff-body;
   font-weight: 400;
   color: $white;
   font-size: 18px;
@@ -32,8 +35,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-family: $ff-heading;
+
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 a, a:visited {
@@ -92,9 +100,19 @@ ul, ol {
     }
   }
 
-  h1 {
+  .site-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-row: 1;
     grid-column: 1 / 2;
+
+    font-size: 2rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
   nav {
@@ -112,7 +130,6 @@ ul, ol {
         margin-right: 1rem;
 
         font-weight: 700;
-        font-size: 1.25rem;
       }
     }
   }
@@ -133,10 +150,6 @@ ul, ol {
   background: lighten($black, 5%);
 
   text-align: center;
-
-  h2 {
-    margin: 0;
-  }
 }
 
 .article-wrapper {
@@ -220,8 +233,6 @@ ul, ol {
        
        h2 {
          margin: 0;
-
-         font-size: 1.25rem;
        }
 
        time {
@@ -243,7 +254,6 @@ ul, ol {
 
   font-weight: 700;
   text-decoration: none;
-  font-size: 1rem;
 
   border: 0.2rem solid $white;
 
@@ -280,9 +290,10 @@ ul, ol {
   justify-content: flex-start;
 
   h3 {
-    font-size: 1rem;
     margin-top: 0;
     margin-right: 0.5rem;
+
+    font-size: 1.5rem;
   }
 }
 
@@ -294,7 +305,6 @@ ul, ol {
   padding: 0;
   margin: 0;
 
-  font-size: 1rem;
   font-style: italic;
   text-transform: capitalize;
 
