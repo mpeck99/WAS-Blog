@@ -9,11 +9,18 @@
   <title>WAS Blog</title>
   {% endif %}
   <link rel="stylesheet" href="/css/styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
-    <h1><a href="/">WAS Blog</a></h1>
+    <a href="/" class="site-icon">
+      <svg viewBox="0 0 24 24">
+        <path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z" />
+      </svg>
+      WAS Blog
+    </a>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -24,7 +31,7 @@
   {% if (pageLayout == 'base') %}
     <main>
       <div class="banner">
-        <h2>{{title}}</h2>
+        <h1>{{title}}</h1>
         <p>{{description}}</p>
       </div>
       {{ content | safe }}
