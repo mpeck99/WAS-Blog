@@ -250,3 +250,16 @@ ul, ol {
   padding: 2rem;
 }
 
+.list-columns {
+  width: 100%;
+ 
+  @media (min-width: 767px) {
+    width: 45rem;
+
+    height: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
