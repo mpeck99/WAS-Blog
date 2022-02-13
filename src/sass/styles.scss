@@ -263,3 +263,38 @@ ul, ol {
     flex-wrap: wrap;
   }
 }
+
+.tags {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  h3 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-right: 0.5rem;
+  }
+}
+
+.taglist {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 1rem;
+  font-style: italic;
+  text-transform: capitalize;
+
+  li {
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+    &:not(:last-child){
+      &:after {
+        content: ','
+      }
+    }
+  }
+}
