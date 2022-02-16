@@ -9,7 +9,7 @@ As I truck through the accessibility fundamentals course by Deque I have started
 
 ## Motor Disabilities
 Motor disabilities can refer from a range of physical experiences such as: 
-* Temporary inability to use a single hand form an injury
+* Temporary inability to use a single hand from an injury
 * Difficulty using both hands
 * Having little to no control over ones limbs
 
