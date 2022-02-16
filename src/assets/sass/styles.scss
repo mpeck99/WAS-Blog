@@ -77,6 +77,18 @@ ul, ol {
 
   color: $white;
 
+  img {
+    width: 4.25rem;
+
+    margin-right: 1rem;
+
+    border: none;
+
+    @media (max-width: 767px){
+      width: 3rem;
+    }
+  }
+
   &:after {
     content: '';
 
