@@ -104,16 +104,22 @@ ul, ol {
   }
 
   a {
+    display: block;
+    
     text-decoration: none;
 
     color: $white;
+
     &:visited {
       color: $white;
     }
 
     &:hover, &:focus {
       color: $yellow;
-      text-decoration: underline;
+
+      transform: translateY(-1rem);
+      transition: transform 0.5s ease-in-out;
+
     }
   }
 
@@ -140,11 +146,13 @@ ul, ol {
 
     ul {
       display: flex;
+      align-items: flex-end;
       
       list-style: none;
 
       li {
         margin-right: 1rem;
+        margin-bottom: 0;
 
         font-weight: 700;
       }
@@ -229,7 +237,7 @@ footer {
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  padding: 2rem;
+  padding: 1.5rem;
 
   article {
     width: 18rem;
@@ -336,11 +344,16 @@ footer {
   }
 }
 
-.article-single {
+.layout-small {
   max-width: 1400px;
 
   margin: 0 auto;
   padding: 2rem;
+
+  h1 {
+    margin-left: 2.5rem;
+    margin-bottom: 0;
+  }
 }
 
 .list-columns {
@@ -403,4 +416,9 @@ footer {
 
 img {
   border: $blue 0.25rem solid;
+}
+
+.active {
+  border-bottom: 0.25rem solid $pink;
+  font-size: 1.5rem;
 }
