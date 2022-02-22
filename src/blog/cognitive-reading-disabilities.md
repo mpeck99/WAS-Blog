@@ -1,7 +1,7 @@
 ---
 title: Accessibility fundamentals - Motor, Speech, Cognitive & Reading disabilities
 date: 2022-02-16
-intro: Today I have read about the remaining disabilities; Motor, speech, cognitive, and reading disabilities that we must keep in mind when creating accessible web content. Check out this blog post as I explain some common disabilities and what can be done to help improve their web experience. 
+intro: As I truck through the accessibility fundamentals course by Deque I have started to learn more and more about various disabilities and the ways these types of users may navigate and interpret our sites and applications. 
 tags: ['disabilities', 'fundamentals']
 ---
 
