@@ -21,7 +21,7 @@ When designing sites and applications for motor disabilities we need to keep in 
 * <strong>When a session times out, users should be warned before the time expires</strong><br>
     People with motor disabilities may need more time to enter information on a webpage so it is important that we are giving them enough time and options to extend their time. 
 * <strong>Provide large click targets</strong><br>
-    People who experience tremors or spasms need to have the ability to activate targets on a webpage. By increasing the target area it can help maximize the chancees of accurately selecting a target on a webpage. 
+    People who experience tremors or spasms need to have the ability to activate targets on a webpage. By increasing the target area it can help maximize the chance's of accurately selecting a target on a webpage. 
 
 ## Speech Disabilities
 Speech disabilities are the inability to produce or organize speech sounds and syllables correctly, fluently, and there may also be a total loss of voice. 
@@ -37,7 +37,7 @@ Speech disabilities are the inability to produce or organize speech sounds and s
 To help design things with speech disabilities in mind we must not depend on any voice inputs in mobile apps, widgets, games, etc. 
 
 ## Cognitive Disabilities
-There are many different type of cognitive disabilities with no real easy way to describe them. They can occur from a variety reasons such as birth, developmental conditions, traumatic brain injury, infections, chemical imbalances or conditions gained later in life. To help design for a variety of conginitve disabilities we need to try and implement the following: 
+There are many different type of cognitive disabilities with no real easy way to describe them. They can occur from a variety reasons such as birth, developmental conditions, traumatic brain injury, infections, chemical imbalances or conditions gained later in life. To help design for a variety of cognitive disabilities we need to try and implement the following: 
 * Keeping the user interface as simple as possible. <br>
     This includes keeping the content simple, video/audio short, limit the number of choices on the screen, providing help options, and designing for eas of use. Those who have a lower comprehension from a cognitive disability have a better web experience if we keep the interface simple and easy to use and understand. Once we start putting to many options or very complex information out there it may be difficult for them to process.
 * To help those with memory loss retain information across screens and within a path to help them easily use the site. This means by creating a site that has predictability across its pages (same navigation, structure, etc.)
