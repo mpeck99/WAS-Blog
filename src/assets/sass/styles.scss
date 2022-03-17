@@ -594,6 +594,19 @@ img {
   text-decoration: none;
 }
 
+.skip-content:focus{
+  left: 0;
+  z-index: 5000;
+
+  color: $black  !important;
+  background-color: $pink;
+  border: $blue solid 0.1rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+
+  text-decoration: underline;
+}
+
 @keyframes scaleHover {
   0% {
     transform: none;
