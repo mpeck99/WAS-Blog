@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta property="og:title" content="Morgan Peck's Blog" />
+  <meta property="og:url" content="https://blog.morganpeck.com" />
+  <meta property="og:image" content="/assets/images/blog-screen.png" />
+  <meta name="description" content="A blog by Morgan Peck documenting anything related to front-end web development and accessibility, and whatever comes to her mind. "/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% if (pageLayout != 'base') %}
@@ -25,8 +29,8 @@
     </a>
     <nav>
       <ul>
-        <li><a href="/" {% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
-        <li><a href="/archive" {% if page.url == '/archive/' %} class="active"{% endif %}>Archive</a></li>
+        <li><a href="/" {% if page.url == '/' %} class="active" aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="/archive" {% if page.url == '/archive/' %} class="active" aria-current="page" {% endif %}>Archive</a></li>
       </ul>
     </nav>
   </header>
