@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
       dir: {
         input: "src",
         output: "public",
-        templateFormats: ['md', '11ty.js']
+        templateFormats: ['md', '11ty.js', "njk"]
       },
      
     };
