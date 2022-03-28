@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 ---
-
+{%- set tagUrl %}/tags/{{ tag }}/{% endset -%} 
 <article aria-labelledby="title">
   <header>
     <h2 id="title">{{ title }}</h2>
@@ -11,7 +11,7 @@ layout: base.njk
       <ul class="taglist">
         {% for tag in tags %}
           {% if tag !== 'posts' %}
-            <li>{{ tag }}</li>
+            <a href="/tags/tag" class="post-tag">{{ tag }}</a>
           {% endif %}
         {% endfor %}
       </ul>
