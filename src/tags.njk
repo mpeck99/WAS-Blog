@@ -1,0 +1,24 @@
+---
+layout: base.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”</h1>
+{% set taglist = collections[ tag ] %}
+<div class="article-wrapper">
+{% for post in taglist | reverse %}
+<article aria-labelledby="{{post.fileSlug}}">
+    <header class="article-header">
+      <h2 id="{{post.fileSlug}}">{{ post.data.title }}</h2>
+    <time> {{ post.date | postDate }}</time>
+    </header>
+    <div class="content">
+      <p>{{ post.data.intro }}</p>
+      <a class="btn btn-link" title="Read about {{post.data.title}}" href="{{ post.url }}" aria-label="Read more about {{post.data.title}}">Read more</a>
+    </div>
+</article> 
+{% endfor %}
+</div>
