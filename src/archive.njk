@@ -7,6 +7,7 @@ pagination:
     reverse: true
     size: 10
 ---
+
 <h1>Archive</h1>
 <div class="article-wrapper">
 {% for post in posts%}
@@ -14,6 +15,16 @@ pagination:
     <header class="article-header">
       <h2 id="{{post.fileSlug}}">{{ post.data.title }}</h2>
     <time> {{ post.date | postDate }}</time>
+    <div class="tags">
+      <h3>Tags:</h3>
+      <ul class="taglist">
+        {% for tag in post.data.tags %}
+          {% if tag !== 'posts' %}
+            <li><a href="/tags/{{tag}}" class="post-tag">{{ tag }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
     </header>
     <div class="content">
       <p>{{ post.data.intro }}</p>
