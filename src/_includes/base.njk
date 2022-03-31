@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% if (pageLayout != 'base') %}
-    <title>Blog | {{title}}</title>
+    <title>{{title}} - Blog | Morgan Peck</title>
   {% else %}
   <title>Blog | Morgan Peck</title>
   {% endif %}
@@ -22,7 +22,7 @@
 </head>
 <body>
   <a href="#main" class="skip-content">Skip to content</a>
-  <header class="site-header">
+  <header class="site-header" aria-label="Site Navigation">
     <a href="/" class="site-icon" title="Morgan Peck Blog">
       <img src="/assets/images/mp-logo-angle-2-1.png" alt="Morgan Peck Logo">
       Blog
@@ -34,22 +34,22 @@
       </ul>
     </nav>
   </header>
-  {% if (pageLayout == 'base') %}
-    <main id="main">
+  {% if (pageLayout == 'home') %}
+    <main id="main" aria-label="Main content" class="layout-home">
       <div class="banner">
-        <h1>{{title}}</h1>
+        <h1 id="title">{{title}}</h1>
         <p>{{description}}</p>
       </div>
       {{ content | safe }}
      </main> 
      {% else %}
-     <main class="layout-small">
+     <main class="layout-post" aria-label="Main content">
       <div class="inner">
         {{ content | safe }}
       </div>
     </main>
   {% endif %}
-  <footer>
+  <footer aria-label="Footer content">
    <p>@{{helpers.currentYear()}} <a href="http://morganpeck.com" target="_blank" aria-label="View Morgan Pecks Portfolio">Morgan Peck - Portfolio</a></p>
    <ul class="social-media-list">
       <li><a href="https://www.linkedin.com/in/morganlpeck/" target="_blank" title="View my linked in profile"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 20 19.995" xml:space="preserve" class="icn icn-linkedin"><path d="M18.522 0H1.478C.66 0 0 .642 0 1.432v17.132c0 .79.66 1.432 1.478 1.432h17.043c.814 0 1.478-.642 1.478-1.432V1.432C19.995.642 19.335 0 18.522 0zM6.062 16.736H3.04V7.708h3.022v9.028zM4.551 6.476h-.018c-1.013 0-1.669-.693-1.669-1.562 0-.883.674-1.557 1.711-1.557 1.032 0 1.669.674 1.688 1.557-.001.869-.656 1.562-1.712 1.562zm12.404 10.26h-3.022v-4.83c0-1.213-.437-2.041-1.53-2.041-.837 0-1.33.558-1.548 1.097-.079.191-.102.46-.102.73v5.044H7.731s.042-8.182 0-9.028h3.022v1.278c.4-.614 1.116-1.492 2.72-1.492 1.99 0 3.477 1.288 3.477 4.063l.005 5.179zm-6.22-7.717c.004-.009.013-.019.018-.028v.028h-.018z"></path></svg></a></li>
