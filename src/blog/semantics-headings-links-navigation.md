@@ -19,7 +19,7 @@ A big thing that seems to be abused is skipping heading hierarchial levels. I me
 <p>Some content related to the sub-subheading.</p>
 ```
 ## Links
-Screen readers will announce a link when they are tabs onto and announce the text of the link. A link needs to have programmatically determined text that is able to be read by screen readers. If a link doesnt have any text it will just read out the URL which will not be helpful to your user (and could be annoying if its a long and complicated).
+Screen readers will announce a link when they are tabs onto and will read the text of that link. A link needs to have programmatically determined text that is able to be read by screen readers. If a link doesnt have any text it will just read out the URL which will not be helpful to your user (and could be annoying if its a long and complicated).
 The name of the link will be calculated as follows (order of precedence by screen readers)
 - `aria-labelledby`
 - `aria-label`
