@@ -684,7 +684,7 @@ pre {
 
   color: $black;
 
-  font-size: 1.25rem;
+  font-size: 1rem;
 
   code {
     white-space: pre-wrap !important;
@@ -693,6 +693,7 @@ pre {
 
 .callout {
   padding: 1rem;
+  margin: 1rem 0;
 
   background-color: $blue;
   border-radius: 0.25rem;
