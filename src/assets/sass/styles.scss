@@ -100,12 +100,15 @@ ol {
   li {
     margin-bottom: 1rem;
     
-    > ul, ol {
+    > ul,
+    ol {
     margin-top: 1rem;
     }
-  }
 
-  
+    > pre {
+      margin-top: 0.75rem;
+  }
+  }
 }
 
 main {
