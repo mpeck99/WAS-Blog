@@ -4,7 +4,7 @@ date: 2022-03-11
 intro: This past week or so I have been trucking through my third Deque University WAS Prep Course, Designing for an Accessible User Experience. While I have experience in the development of accessible content I have never also though about the design aspect.
 tags: ['WAS', 'WCAG', 'Design']
 ---
-# Designing accessible user experiences (UX)
+
 Hello, its been awhile from my last post, I have been busy learning and trying to follow along with deque's courses during work and on my free time. My last post I started discussing Web Content Accessible Guidelines (WCAG) 2.1 and the perceivable guidelines. I have read through all the guidelines and will be making a post in the future once I have the chance to get back and re-look over them. 
 
 This past week or so I have been trucking through my third Deque University WAS Prep Course, Designing for an Accessible User Experience. While I have experience in the development of accessible content I have never also though about the design aspect. Throughout this course it keeps mentioning how as developers we like to say "mobile first" and how we should also be thinking of "accessible design" from the very beginning. 
