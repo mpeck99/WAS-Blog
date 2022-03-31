@@ -4,10 +4,10 @@ layout: base.njk
 {%- set tagUrl %}/tags/{{ tag }}/{% endset -%} 
 <article aria-labelledby="title">
   <header>
-    <h2 id="title">{{ title }}</h2>
+    <h1 id="title">{{ title }}</h1>
     <time> {{ page.date | postDate }}</time>
     <div class="tags">
-      <h3>Tags:</h3>
+      <h2>Tags:</h2>
       <ul class="taglist">
         {% for tag in tags %}
           {% if tag !== 'posts' %}
