@@ -1,7 +1,7 @@
 ---
 title: Importance of semantic HTML - Titles, Languages, and Landmarks
 date: 2022-03-30
-intro: As I truck through the accessibility fundamentals course by Deque I have started to learn more and more about various disabilities and the ways these types of users may navigate and interpret our sites and applications. 
+intro: This week I have been going over the importance of semantic HTML. Some of the topics I will discuss in this blog post will be focused towards page titles, languages, and landmarks. 
 tags: ['accessibility', 'HTML']
 ---
 This week I have been going over the importance of semantic HTML. Some of the topics I will discuss in this blog post will be focused towards page titles, languages, and landmarks. 
