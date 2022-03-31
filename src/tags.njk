@@ -6,8 +6,11 @@ pagination:
   alias: tag
 permalink: /tags/{{ tag }}/
 ---
-<h1>Tagged “{{ tag }}”</h1>
+
+{% set postslistCounter = collections[tag] | length %} 
 {% set taglist = collections[ tag ] %}
+
+<h1>{{postslistCounter}} posts tagged <span class="tag">“{{ tag }}”</span></h1>
 <div class="article-wrapper">
 {% for post in taglist | reverse %}
 <article aria-labelledby="{{post.fileSlug}}">
