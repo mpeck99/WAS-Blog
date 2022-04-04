@@ -7,6 +7,7 @@ pagination:
     reverse: true
     size: 10
 ---
+{% set pageNumber = (pagination.pageNumber + 1) %}
 
 <h1>Archive</h1>
 <div class="article-wrapper">
@@ -32,4 +33,15 @@ pagination:
     </div>
 </article> 
 {% endfor %}
+</div>
+<div class="pagination">
+  {% if pageNumber != 1 %}
+    <a class="prev" href="{{ pagination.previousPageHref }}"> &lt; Previous</a>
+  {% endif %}
+  {% if pagination.hrefs.length != 1%}
+    <p>Page <span>{{pageNumber}} </span>of {{pagination.hrefs.length}}</p>
+  {% endif %}
+  {% if pageNumber != pagination.hrefs.length %}
+    <a class="next" href="{{ pagination.nextPageHref }}">Next &gt;</a>
+  {% endif %}
 </div>
