@@ -701,6 +701,24 @@ pre {
   color: $black;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    &.prev {
+      margin-right: 1rem;
+      margin-left: -1rem;
+    }
+
+    &.next {
+      margin-left: 1rem;
+    }
+  }
+
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
