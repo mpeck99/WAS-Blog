@@ -9,8 +9,9 @@ permalink: /tags/{{ tag }}/
 
 {% set postslistCounter = collections[tag] | length %} 
 {% set taglist = collections[ tag ] %}
+{% set pageNumber = (pagination.pageNumber + 1) %}
 
-<h1>{{postslistCounter}} posts tagged <span class="tag">“{{ tag }}”</span></h1>
+<h1>{{postslistCounter}} post(s) tagged <span class="tag">“{{ tag }}”</span></h1>
 <div class="article-wrapper">
 {% for post in taglist | reverse %}
 <article aria-labelledby="{{post.fileSlug}}">
