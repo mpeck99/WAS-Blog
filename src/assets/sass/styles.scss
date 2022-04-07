@@ -27,6 +27,18 @@ $border-gradient: linear-gradient(
   $black
 );
 
+
+
+:root {
+  --shadow-color: 0deg 0% 0%;
+
+  --box-shadow:
+  0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+  0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+  2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+  5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
 html,
 body {
   box-sizing: border-box;
@@ -121,12 +133,16 @@ main {
   grid-template-rows: 100%;
   align-items: center;
 
-  position: relative;
+  position: sticky;
+  top: 0;
+
+  z-index: 10;
 
   padding: 1rem 2rem;
 
   background: $black;
   border-bottom: 0.5rem solid;
+  box-shadow: var(--box-shadow);
   border-image: $border-gradient 10;
 
   color: $white;
@@ -288,6 +304,8 @@ footer {
     position: relative;
 
     background-color: $white;
+    box-shadow: var(--box-shadow);
+
     color: $black;
 
     transition: all 0.2s ease-in-out;
@@ -697,6 +715,7 @@ pre {
 
   background-color: $blue;
   border-radius: 0.25rem;
+  box-shadow: var(--box-shadow);
 
   color: $black;
 }
@@ -729,4 +748,32 @@ pre {
   padding: 0;
   width: 1px;
   white-space: nowrap;
+}
+
+
+.example {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  background-color: $white;
+  border-radius: 0.25rem;
+
+  box-shadow: var(--box-shadow);
+
+  color: $black;
+
+  img {
+    max-width: 10rem;
+    border: 0;
+  }
+
+  pre, code {
+    margin-top: 1rem;
+    background-color: $black;
+
+    color: $white;
+  }
 }
