@@ -82,7 +82,7 @@ Actionable images or iamges that are used for a user to perform a specific funct
 <img src="../assets/images/submit-button.png" class="img-example" alt="Submit"/>
 
 ```
-<img src="../assets/images/submit-button.png" class="img-example" alt="Morgan Peck Logo"/>
+<img src="../assets/images/submit-button.png" class="img-example" alt="Submit"/>
 ```
 This is a good example because this informs the user that the image will submit when the action is performed. 
 </div>
