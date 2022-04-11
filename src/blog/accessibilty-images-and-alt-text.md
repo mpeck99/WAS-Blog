@@ -146,7 +146,7 @@ Any images that are purely decorative or redundant CSS images **SHOULD NOT** hav
 Decorative images are images that do not convey important content, when these are used included an empty `alt=""` on the image and screen readers will ignore it. 
 
 <div class="callout">
-    <p><strong>Note:</strong> Be sure to include the `alt` tag even if its empty. If you do not include it then the screen reader will read the images title rather than ignoring it completely. 
+    <p><strong>Note:</strong> Be sure to include the <code>alt=""</code> tag even if its empty. If you do not include it then the screen reader will read the images title rather than ignoring it completely. 
 </div>
 
 ## Image maps
