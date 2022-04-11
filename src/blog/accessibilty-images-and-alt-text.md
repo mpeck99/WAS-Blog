@@ -103,7 +103,7 @@ Animated images **MUST** not flash or flicker more than three times per second. 
 [Here](http://trace.umd.edu/peat) is a free resource you can use to test your webpage animations and or videos to make sure they are not at risk for causing a seizure
 
 ## Auto play video-only content
-Any videos that auto play on your site **MUST** have a method to pause, stop, or hide the content. Having a video automatically play with no way for the user can stop it can be problematic for those with cognitive disabilities. By limiting your video auto-play to 5 seconds can grab peoples attention but also will not prevent or distract your user from interacting with your sites content. 
+Any videos that auto play on your site **MUST** have a method to pause, stop, or hide the content. Having a video automatically play with no way for the user can stop it can be problematic for those with cognitive disabilities. By limiting your video auto-play to , it can grab peoples attention but also will not prevent or distract your user from interacting with your sites content. 
 
 ## Complex images
 Complex images are images that have amounts of complex data such as charts and graphs. Complex images **MUST** must be briefly described using `alt` text and **MUST** have a more long complete description. 
