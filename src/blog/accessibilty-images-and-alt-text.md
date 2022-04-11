@@ -92,7 +92,7 @@ This is a good example because this informs the user that the image will submit 
 <img src="../assets/images/submit-button.png" class="img-example" alt="Pink oval with bevels"/>
 
 ```
-<img src="../assets/images/submit-button.png" class="img-example" />
+<img src="../assets/images/submit-button.png" class="img-example" alt="Pink oval with bevels" />
 ```
 This alternative text does'nt inform the user what the purpose of the button is. It describes what the button looks like but that is not beneficial to the user since they do not know its a button that submits the content.  
 </div>
