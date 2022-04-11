@@ -25,7 +25,7 @@ When creating `alt` text ask yourself the following questions:
 - What purpose does it fulfill?
 - If I could not use the non-text content, what words would I use to convey the same information or function?
 
-If you have an image that is purely for decoration you should hide the image with an empty `alt` tag. **Be sure to include an alt tag, if not the screen reader will read the images filename, which can be annoying**.
+If you have an image that is purely for decoration you should hide the image with an empty `alt` tag. **Be sure to include an alt tag, if not the screen reader will read the images filename, which can be irrelevant and un-useful to the user**.
 
 Also if you have an image that conveys a lot of important information, there should be a supplementary long description for that image.
 
