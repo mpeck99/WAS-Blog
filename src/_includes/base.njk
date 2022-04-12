@@ -35,15 +35,21 @@
     </nav>
   </header>
   {% if (pageLayout == 'home') %}
-    <main id="main" aria-label="Main content" class="layout-home">
+    <main id="main" aria-label="Main content" class="layout layout-home">
       <div class="banner">
         <h1 id="title">{{title}}</h1>
         <p>{{description}}</p>
       </div>
       {{ content | safe }}
      </main> 
-     {% else %}
-     <main class="layout-post" aria-label="Main content">
+     {% elif (pageLayout == 'subpage' ) %}
+     <main class="layout layout-subpage" aria-label="Main content">
+      <div class="inner">
+        {{ content | safe }}
+      </div>
+    </main>
+    {% else %}
+    <main class="layout layout-post" aria-label="Main content">
       <div class="inner">
         {{ content | safe }}
       </div>
