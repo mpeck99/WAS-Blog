@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: subpage.njk
 title: Posts
 pagination:
     data: collections.posts
@@ -8,6 +8,7 @@ pagination:
     size: 10
 ---
 {% set pageNumber = (pagination.pageNumber + 1) %}
+{% set pageLayout = 'subpage' %}
 
 <h1>Archive</h1>
 <div class="article-wrapper">

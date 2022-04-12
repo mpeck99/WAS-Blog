@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: subpage.njk
 pagination:
   data: collections
   size: 1
@@ -10,6 +10,7 @@ permalink: /tags/{{ tag }}/
 {% set postslistCounter = collections[tag] | length %} 
 {% set taglist = collections[ tag ] %}
 {% set pageNumber = (pagination.pageNumber + 1) %}
+{% set pageLayout = 'subpage' %}
 
 <h1>{{postslistCounter}} post(s) tagged <span class="tag">“{{ tag }}”</span></h1>
 <div class="article-wrapper">
