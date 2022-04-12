@@ -614,16 +614,10 @@ footer {
   margin-left: 2rem;
 }
 
-.layout-post {
+.layout {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 2rem;
-
-  h1 {
-    margin-bottom: 0;
-  }
 
   .inner {
     max-width: 1400px;
@@ -633,7 +627,18 @@ footer {
   .article-wrapper {
     width: 100%;
   }
+}
 
+
+.layout-post {
+  padding: 2rem;
+
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+.layout-subpage {
   article {
     &:only-child {
       max-width: 20rem;
