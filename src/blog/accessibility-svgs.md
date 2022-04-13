@@ -1,7 +1,7 @@
 ---
 title: Scalable Vector Graphics (SVGs) and accessibility
-date: 2022-04-08 
-intro:  
+date: 2022-04-12 
+intro: Scalable Vector Graphics can help provide a number fo features to benefit individuals who experience low vision or color blindness. 
 tags: ['accessibility', 'alt', 'svgs']
 ---
 
@@ -64,6 +64,49 @@ If there is any text that also is important and should be spoken by a screen rea
 
 <div class="callout">
     <p><strong>Note:</strong> You should not embed SVGs in an <code>object</code> or an <code>iframe</code> tag since they are very poorly supported by assistive technologies</p>
+</div>
+
+## Text in SVGs
+You should try your best to eliminate or keep to a minimum the amount of text elements you have in an SVG. Screen readers will read all text elements as one continuous string of text which can end up being confusing for the user.
+
+## Complex SVGs
+If you have a complex SVG, such as a graph or chart, you should provide a meaningful and concise `alt` text and must have a more complete description somewhere else. By providing these you can help blind users be able to easily make sense of the graphic. Provide a `<desc>` tag for the detailed description of the complex SVG if it cannot be provided in any other way. This will make description available only to screen reader users, and is the preferred method of providing a detailed description. 
+```
+<svg role="img" aria-labelledby="description"> 
+<title>Total Widgets Purchased during 2016</title>
+  <desc id="description">
+  The graph displays the total number of widgets purchased from The ABC Store
+  during 2016, displayed by month.
+  </desc>
+</svg>
+```
+
+## Color contrast
+If the SVG doesnt have a set background color, it will change itself when/if a user switches to windows high contrast mode. This may not be an issue but if large parts of the SVG ar transparent and they depend on a particular background color it may be difficult for the user to view when this change occurs.
+
+Try to style your SVG to ensure compatibility with windows high contrast mode.
+
+## Animated SVGs
+Animations that use JS or CSS to animate should not blink at a rate of three times per second or more. This will help lower the risk of causing seizures in users who are epileptic or have photo-sensitivity disorders. Also to meet WCAG Guideline Success Criteria 2.2.2: Pause, Stop, Hide, ensure that your video does not auto-play for more than 5 seconds. You must allow your users to pause or stop the animations. This is beneficial to any users who have cognitive disabilities to not become distracted. 
+
+## Interactive SVGs
+If you have an interactive SVG on your page you must ensure that it is fully accessible to keyboards by making: 
+- All links, buttons, and controls keyboard focusable and usable
+- All focusable elements must have a visual focus indicator
+- Scripting must manage the focus whe activating, deactivating/dimissing features (dialogs, menus, etc)
+    - The focus must be at the proper place at the proper time
+- `<svg>` element must not trap the keyboard focus
+- Tab order must be logical
+- All focusable elements must be visible on the screen or become visible once they are focused on
+
+You also must make sure that its fully touch-screen accessible, meaning: 
+- All mouse-only or keyboard-only functions have a touch equivalent action
+- All gesture-dependent actions must have an equivalent non-gesture method to achieve the same results
+
+Interactive SVGs must also communicate the applicable `name`, `role`, and `value` of controls , events, and semantic elements withing the svg element. This means that it must abide by the same accessibility guidelines and principles that govern custom ARIA widgets. 
+
+<div class="callout">
+    <p><strong>Note:</strong> Support for interactive SVGs can be spotty when combined with ARIA so its best to thoroughly test them when used.</p>
 </div>
 
 
