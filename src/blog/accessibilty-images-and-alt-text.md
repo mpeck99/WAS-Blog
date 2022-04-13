@@ -59,7 +59,7 @@ This means that you image must have a form of alternative text by using any of t
 ```
 <img src="../assets/images/mp-logo-angle-2-1.png" class="img-example" alt="Morgan Peck Logo"/>
 ```
-Here is an image that has an alternative text that describes it as Morgan Peck Logo. This allows the user to understand that its a logo for the site. 
+<p>Here is an image that has an alternative text that describes it as Morgan Peck Logo. This allows the user to understand that its a logo for the site. </p>
 </div>
 
 #### Example of bad alt text
@@ -69,7 +69,7 @@ Here is an image that has an alternative text that describes it as Morgan Peck L
 ```
 <img src="../assets/images/mp-logo-angle-2-1.png" class="img-example" />
 ```
-In this example there is no alternative text for the user to know that its the logo for the site. Since there is no alternative text the screen reader will read out: Image mp-logo-angle-2-1.png, which is no use to the user. 
+<p>In this example there is no alternative text for the user to know that its the logo for the site. Since there is no alternative text the screen reader will read out: Image mp-logo-angle-2-1.png, which is no use to the user. </p>
 </div>
 
 ## Actionable images
@@ -84,7 +84,7 @@ Actionable images or iamges that are used for a user to perform a specific funct
 ```
 <img src="../assets/images/submit-button.png" class="img-example" alt="Submit"/>
 ```
-This is a good example because this informs the user that the image will submit when the action is performed. 
+<p>This is a good example because this informs the user that the image will submit when the action is performed.</p> 
 </div>
 
 #### Example of a bad actionable image
@@ -94,7 +94,7 @@ This is a good example because this informs the user that the image will submit 
 ```
 <img src="../assets/images/submit-button.png" class="img-example" alt="Pink oval with bevels" />
 ```
-This alternative text does'nt inform the user what the purpose of the button is. It describes what the button looks like but that is not beneficial to the user since they do not know its a button that submits the content.  
+<p>This alternative text does'nt inform the user what the purpose of the button is. It describes what the button looks like but that is not beneficial to the user since they do not know its a button that submits the content.  </p>
 </div>
 
 ## Animated images
@@ -146,7 +146,7 @@ Any images that are purely decorative or redundant CSS images **SHOULD NOT** hav
 Decorative images are images that do not convey important content, when these are used included an empty `alt=""` on the image and screen readers will ignore it. 
 
 <div class="callout">
-    <p><strong>Note:</strong> Be sure to include the <code>alt=""</code> tag even if its empty. If you do not include it then the screen reader will read the images title rather than ignoring it completely. 
+    <p><strong>Note:</strong> Be sure to include the <code>alt=""</code> tag even if its empty. If you do not include it then the screen reader will read the images title rather than ignoring it completely.</p>
 </div>
 
 ## Image maps
