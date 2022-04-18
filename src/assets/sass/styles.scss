@@ -7,7 +7,9 @@ $white: #fef9ef;
 $blue: #41b6e6;
 $yellow: #ffcb77;
 $green: #17c3b2;
+$green2: #18AD54;
 $purple: #c794af;
+$red: #FE343B;
 
 $ff-heading: 'Rubik', sans-serif;
 $ff-body: 'Montserrat', sans-serif;
@@ -840,11 +842,11 @@ pre {
 
 // Font-icons
 .checked {
-  color: green;
+  color: $green2;
 }
 
 .unchecked {
-  color: red;;
+  color: $red;
 }
 
 // Tables 
@@ -860,5 +862,13 @@ pre {
   th, td {
     padding: 0.5rem;
     border: solid $white 2px;
+  }
+}
+
+.table-checked {
+  tr td {
+    &:not(:first-child){
+      text-align: center;
+    }
   }
 }
