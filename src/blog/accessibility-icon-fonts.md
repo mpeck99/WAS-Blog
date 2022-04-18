@@ -82,54 +82,54 @@ If you have any actionable icon fonts without any accompanying visible test you 
 ## SVGs vs Icon fonts
 SVGs and icon fonts are pretty similar when it can come to accessibility they both have their strengths and weaknesses. See the table below: 
 
-<table class="table" aria-label="SVGs and Icon fonts benefits">
+<table class="table table-checked" aria-label="SVGs and Icon fonts benefits">
     <thead>
         <tr>
-            <th>Benefits</th>
-            <th>SVGs</th>
-            <th>Icon Fonts</th>
+            <th id="benefits">Benefits</th>
+            <th id="svg">SVGs</th>
+            <th id="icn">Icon Fonts</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Icons are vector based, rendering clearly and legibly</td>
-            <td><i class="fa-solid fa-circle-check unchecked" aria-label="Unchecked"></i></td>
-            <td><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
+            <td scope="col" headers="benefits" headers="benefits">Icons are vector based, rendering clearly and legibly</td>
+            <td headers="benefits svg"><i class="fa-solid fa-circle-xmark unchecked" aria-label="Unchecked"></i></td>
+            <td headers="benefits icn"><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
         </tr>
         <tr>
-            <td>Users can customize colors with accessibility utilities like Windows high contrast mode </td>
-            <td><i class="fa-solid fa-circle-check unchecked" aria-label="Unchecked"></i></td>
-            <td><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
+            <td scope="col" headers="benefits">Users can customize colors with accessibility utilities like Windows high contrast mode </td>
+            <td headers="benefits svg"><i class="fa-solid fa-circle-xmark unchecked" aria-label="Unchecked"></i></td>
+            <td headers="benefits icn"><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
         </tr>
         <tr>
-            <td>Icons scale with text when magnifying only the text</td>
-            <td><i class="fa-solid fa-circle-check unchecked" aria-label="Unchecked"></i></td>
-            <td><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
+            <td scope="col" headers="benefits">Icons scale with text when magnifying only the text</td>
+            <td headers="benefits svg"><i class="fa-solid fa-circle-xmark unchecked" aria-label="Unchecked"></i></td>
+            <td headers="benefits icn"><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
         </tr>
         <tr>
-            <td>Icons work when images are turned off</td>
-            <td><i class="fa-solid fa-circle-check unchecked" aria-label="Unchecked"></i></td>
-            <td><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
+            <td scope="col" headers="benefits">Icons work when images are turned off</td>
+            <td headers="benefits svg"><i class="fa-solid fa-circle-xmark unchecked" aria-label="Unchecked"></i></td>
+            <td headers="benefits icn"><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
         </tr>
          <tr>
-            <td>Icons can be multiple colors</td>
-            <td><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
-           <td><i class="fa-solid fa-circle-check unchecked" aria-label="Unchecked"></i></td>
+            <td scope="col" headers="benefits">Icons can be multiple colors</td>
+            <td headers="benefits svg"><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
+            <td headers="benefits icn"><i class="fa-solid fa-circle-xmark unchecked" aria-label="Unchecked"></i></td>
         </tr>
          <tr>
-            <td>Icons retain their original color(s) when font and background colors are changed in user preferences</td>
-            <td><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
-            <td><i class="fa-solid fa-circle-check unchecked" aria-label="Unchecked"></i></td>
+            <td scope="col" headers="benefits">Icons retain their original color(s) when font and background colors are changed in user preferences</td>
+            <td headers="benefits svg"><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
+            <td headers="benefits icn"><i class="fa-solid fa-circle-xmark unchecked" aria-label="Unchecked"></i></td>
         </tr>
          <tr>
-            <td>Icons work when styles are turned off</td>
-            <td><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
-            <td><i class="fa-solid fa-circle-check unchecked" aria-label="Unchecked"></i></td>
+            <td scope="col" headers="benefits">Icons work when styles are turned off</td>
+            <td headers="benefits svg"><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
+            <td headers="benefits icn"><i class="fa-solid fa-circle-xmark unchecked" aria-label="Unchecked"></i></td>
         </tr>
          <tr>
-            <td>Icons work when users customize the font (users with dyslexia may choose a dyslexia-friendly font)</td>
-            <td><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
-            <td><i class="fa-solid fa-circle-check unchecked" aria-label="Unchecked"></i></td>
+            <td scope="col" headers="benefits">Icons work when users customize the font (users with dyslexia may choose a dyslexia-friendly font)</td>
+            <td headers="benefits svg"><i class="fa-solid fa-circle-check checked" aria-label="Checked"></i></td>
+            <td headers="benefits icn"><i class="fa-solid fa-circle-xmark unchecked" aria-label="Unchecked"></i></td>
         </tr>
     </tbody>
 </table>
