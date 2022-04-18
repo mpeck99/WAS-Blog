@@ -73,27 +73,28 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+
+  font-size: clamp(2.5rem,6vw,3.5rem);
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: clamp(2.25rem,6vw,3rem);
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: clamp(2rem,6vw,2.25rem)
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: clamp(1.75rem,6vw,2rem)
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: clamp(1.5rem,6vw,1.5rem)
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: clamp(1.25rem,6vw,1.25rem)
 }
 
 a,
@@ -120,6 +121,12 @@ ol {
       margin-top: 0.75rem;
     }
   }
+}
+
+button {
+  max-width: 4rem;
+
+  padding: 10px 20px;
 }
 
 main {
@@ -746,11 +753,25 @@ pre {
     border: 0;
   }
 
-  pre, code {
+  pre {
     margin-top: 1rem;
+    padding: 0.5rem;
+
     background-color: $black;
 
     color: $white;
+
+    code {
+      background-color: $black;
+    }
+  }
+
+  a {
+    color: $blue;
+
+    &:hover, &:focus {
+      color: $pink;
+    }
   }
 }
 
@@ -815,4 +836,29 @@ pre {
   padding: 0;
   width: 1px;
   white-space: nowrap;
+}
+
+// Font-icons
+.checked {
+  color: green;
+}
+
+.unchecked {
+  color: red;;
+}
+
+// Tables 
+.table {
+  border-collapse: collapse;
+
+  thead {
+    background-color: $pink;
+
+    color: $black;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    border: solid $white 2px;
+  }
 }
