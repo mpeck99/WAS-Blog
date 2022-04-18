@@ -84,19 +84,19 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(2rem,6vw,2.25rem)
+  font-size: clamp(2rem,6vw,2.25rem);
 }
 
 h4 {
-  font-size: clamp(1.75rem,6vw,2rem)
+  font-size: clamp(1.75rem,6vw,2rem);
 }
 
 h5 {
-  font-size: clamp(1.5rem,6vw,1.5rem)
+  font-size: clamp(1.5rem,6vw,1.5rem);
 }
 
 h6 {
-  font-size: clamp(1.25rem,6vw,1.25rem)
+  font-size: clamp(1.25rem,6vw,1.25rem);
 }
 
 a,
@@ -199,7 +199,7 @@ main {
     grid-row: 1;
     grid-column: 1 / 2;
 
-    font-size: 2rem;
+    font-size: clamp(1.75rem,6vw,2rem);
 
     svg {
       width: 2rem;
@@ -336,7 +336,7 @@ footer {
     .taglist {
       a {
         color: $black;
-        font-size: 1rem;
+        font-size: clamp(1rem,6vw,1rem);
 
         &:hover,
         &:focus {
@@ -514,7 +514,7 @@ footer {
       h2 {
         margin: 0;
 
-        font-size: 1.5rem;
+        font-size: clamp(1.75rem,6vw,1.5rem);
       }
 
       time {
@@ -525,7 +525,7 @@ footer {
     p {
       margin-bottom: 3rem;
 
-      font-size: 1.25rem;
+      font-size: clamp(1rem,6vw,1.25rem);
     }
 
     &:hover,
@@ -573,11 +573,11 @@ footer {
     margin-top: 0;
     margin-right: 0.5rem;
 
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem,6vw,1.5rem);
   }
 
   h3 {
-    font-size: 0.5rem;
+    font-size: clamp(0.5rem,6vw,0.75rem);
 
     margin-top: 0;
     margin-right: 0.25rem;
@@ -630,7 +630,8 @@ footer {
 
   .inner {
     max-width: 1400px;
-    width: 100%;
+
+    padding: 2rem;
   }
 
   .article-wrapper {
@@ -687,7 +688,7 @@ img {
 
 .active {
   border-bottom: 0.25rem solid $pink;
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem,6vw,1.5rem);
 }
 
 // Animations
@@ -716,7 +717,7 @@ pre {
 
   color: $black;
 
-  font-size: 1rem;
+  font-size: clamp(0.75rem,6vw,1rem);
 
   code {
     white-space: pre-wrap !important;
