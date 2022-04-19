@@ -20,8 +20,9 @@
   <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6d7508e350.js" crossorigin="anonymous"></script>
+  <script src="{{ '/assets/js/main.js' | url }}" defer></script>
 </head>
-<body>
+<body class="theme-dark">
   <a href="#main" class="skip-content">Skip to content</a>
   <header class="site-header" aria-label="Site Navigation">
     <a href="/" class="site-icon" title="Morgan Peck Blog">
@@ -34,6 +35,10 @@
         <li><a href="/archive" {% if page.url == '/archive/' %} class="active" aria-current="page" {% endif %}>Archive</a></li>
       </ul>
     </nav>
+    <div class="btn-tab">
+      <button class="theme"><i class="fa-solid fa-sun" role="img" aria-label="Light & Dark Mode Theme Switcher"></i></button>
+      <button class="font-size"><i class="fa-solid fa-font" role="img" aria-label="Change text size"></i></button>
+    </div>
   </header>
   {% if (pageLayout == 'home') %}
     <main id="main" aria-label="Main content" class="layout layout-home">

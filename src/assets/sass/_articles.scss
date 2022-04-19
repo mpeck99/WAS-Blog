@@ -1,0 +1,333 @@
+// Articles
+.article-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  article {
+    width: 20rem;
+    min-height: 15rem;
+
+    flex: 1 0 auto;
+
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 0;
+
+    position: relative;
+
+    background-color: $white;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.25rem;
+
+    color: $black;
+
+    transition: all 0.2s ease-in-out;
+
+    @media (max-width: 767px) {
+      margin: 1rem 0;
+    }
+
+    .tags {
+      margin-top: 0.75rem;
+      align-items: center;
+    }
+
+    .taglist {
+      a {
+        color: $black;
+        font-size: clamp(1rem, 6vw, 1rem);
+
+        &:hover,
+        &:focus {
+          opacity: 0.9;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .btn-link {
+      position: absolute;
+
+      left: 0.5rem;
+      bottom: 0.55rem;
+    }
+
+    $colors: $blue, $pink, $yellow, $green, $purple;
+    $length: length($colors);
+
+    @for $i from 1 through $length {
+      &:nth-child(#{$length}n + #{$i}) {
+        header {
+          background: nth($colors, $i);
+          border-radius: 0.25rem;
+
+          position: relative;
+
+          &:after {
+            content: '';
+
+            width: 100%;
+            height: 3rem;
+
+            position: absolute;
+            bottom: -2.5rem;
+            left: 0;
+
+            background: nth($colors, $i);
+            clip-path: polygon(
+              100% 0%,
+              0% 0%,
+              0% 62%,
+              1% 61.96%,
+              2% 61.83%,
+              3% 61.63%,
+              4% 61.34%,
+              5% 60.97%,
+              6% 60.53%,
+              7% 60.02%,
+              8% 59.43%,
+              9% 58.78%,
+              10% 58.07%,
+              11% 57.3%,
+              12% 56.48%,
+              13% 55.62%,
+              14% 54.72%,
+              15% 53.78%,
+              16% 52.82%,
+              17% 51.84%,
+              18% 50.85%,
+              19% 49.85%,
+              20% 48.85%,
+              21% 47.86%,
+              22% 46.89%,
+              23% 45.93%,
+              24% 45.01%,
+              25% 44.12%,
+              26% 43.27%,
+              27% 42.46%,
+              28% 41.71%,
+              29% 41.02%,
+              30% 40.39%,
+              31% 39.82%,
+              32% 39.33%,
+              33% 38.91%,
+              34% 38.57%,
+              35% 38.3%,
+              36% 38.12%,
+              37% 38.02%,
+              38% 38%,
+              39% 38.07%,
+              40% 38.22%,
+              41% 38.45%,
+              42% 38.76%,
+              43% 39.15%,
+              44% 39.62%,
+              45% 40.15%,
+              46% 40.76%,
+              47% 41.43%,
+              48% 42.16%,
+              49% 42.94%,
+              50% 43.77%,
+              51% 44.65%,
+              52% 45.56%,
+              53% 46.5%,
+              54% 47.47%,
+              55% 48.46%,
+              56% 49.45%,
+              57% 50.45%,
+              58% 51.45%,
+              59% 52.43%,
+              60% 53.4%,
+              61% 54.35%,
+              62% 55.27%,
+              63% 56.15%,
+              64% 56.98%,
+              65% 57.77%,
+              66% 58.5%,
+              67% 59.18%,
+              68% 59.79%,
+              69% 60.33%,
+              70% 60.81%,
+              71% 61.2%,
+              72% 61.52%,
+              73% 61.76%,
+              74% 61.92%,
+              75% 61.99%,
+              76% 61.98%,
+              77% 61.89%,
+              78% 61.72%,
+              79% 61.46%,
+              80% 61.13%,
+              81% 60.72%,
+              82% 60.23%,
+              83% 59.67%,
+              84% 59.05%,
+              85% 58.36%,
+              86% 57.61%,
+              87% 56.82%,
+              88% 55.97%,
+              89% 55.08%,
+              90% 54.16%,
+              91% 53.21%,
+              92% 52.23%,
+              93% 51.25%,
+              94% 50.25%,
+              95% 49.25%,
+              96% 48.25%,
+              97% 47.27%,
+              98% 46.31%,
+              99% 45.37%,
+              100% 44.47%
+            );
+          }
+        }
+
+        .btn-link {
+          color: $white;
+
+          &:hover,
+          &:focus {
+            color: nth($colors, $i);
+            border-color: nth($colors, $i);
+          }
+        }
+      }
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:only-child {
+      margin-right: 0;
+    }
+
+    header {
+      min-height: 5rem;
+
+      padding: 1.25rem;
+      margin-bottom: 2.5rem;
+      margin-left: -1rem;
+      margin-top: -1rem;
+      margin-right: -1rem;
+    }
+
+    h2 {
+      margin: 0;
+
+      font-size: clamp(1.75rem, 6vw, 1.5rem);
+    }
+
+    time {
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 3rem;
+
+      font-size: clamp(1rem, 6vw, 1.25rem);
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+// Tags
+
+.tags {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  h2 {
+    margin-top: 0;
+    margin-right: 0.5rem;
+
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+
+  h3 {
+    font-size: clamp(0.5rem, 6vw, 0.75rem);
+
+    margin-top: 0;
+    margin-right: 0.25rem;
+    margin-bottom: 0;
+  }
+}
+
+.taglist {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+  font-style: italic;
+  text-transform: capitalize;
+
+  li {
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+    &:not(:last-child) {
+      &:after {
+        content: ',';
+      }
+    }
+  }
+}
+
+.tag {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+#title {
+  margin-bottom: 0.25rem;
+}
+
+// Code
+pre {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  margin: 0;
+
+  background-color: $white;
+  border-radius: 0.25rem;
+  box-shadow: var(--box-shadow);
+
+  color: $black;
+
+  font-size: clamp(0.75rem, 6vw, 1rem);
+
+  code {
+    white-space: pre-wrap !important;
+  }
+}
+
+// Pagination
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    &.prev {
+      margin-right: 1rem;
+      margin-left: -1rem;
+    }
+
+    &.next {
+      margin-left: 1rem;
+    }
+  }
+}

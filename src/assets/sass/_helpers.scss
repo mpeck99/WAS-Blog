@@ -1,0 +1,55 @@
+.float-right {
+  float: right;
+  margin-left: 2rem;
+}
+
+.skip-content {
+  width: 26em;
+
+  display: block;
+  position: absolute;
+  left: -1000em;
+  top: 0;
+
+  padding: 5px;
+
+  background: #333;
+
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-content:focus {
+  left: 0;
+  z-index: 5000;
+
+  color: $black !important;
+  background-color: $pink;
+  border: $blue solid 0.1rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+  white-space: nowrap;
+}
+
+// Font-icons
+.checked {
+  color: $green2;
+}
+
+.unchecked {
+  color: $red;
+}

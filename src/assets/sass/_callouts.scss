@@ -1,0 +1,54 @@
+// Callouts & Examples
+
+.callout {
+  padding: 1rem;
+  margin: 1rem 0;
+
+  background-color: $blue;
+  border-radius: 0.25rem;
+  box-shadow: var(--box-shadow);
+
+  color: $black;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  background-color: $white;
+  border-radius: 0.25rem;
+
+  box-shadow: var(--box-shadow);
+
+  color: $black;
+
+  img {
+    max-width: 10rem;
+    border: 0;
+  }
+
+  pre {
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    background-color: $black;
+
+    color: $white;
+
+    code {
+      background-color: $black;
+    }
+  }
+
+  a {
+    color: $blue; 
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+  }
+}

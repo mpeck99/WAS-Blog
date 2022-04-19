@@ -1,0 +1,165 @@
+.theme-dark {
+  background-color: $black;
+  color: $white;
+
+  .site-header {
+    background-color: $black;
+    color: $white;
+
+    a {
+      &:visited {
+        color: $white;
+      }
+
+      &:hover,
+      &:focus {
+        color: $yellow;
+      }
+    }
+  }
+
+  .banner {
+    background: lighten($black, 5%);
+  }
+
+  a,
+  a:visited {
+    color: $yellow;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+  }
+}
+
+.theme-light {
+  background-color: $white;
+  color: $black;
+
+  .site-header {
+    background-color: $white;
+    color: $black;
+
+    a {
+      &:visited {
+        color: $black;
+      }
+
+      &:hover,
+      &:focus {
+        color: $pink;
+      }
+    }
+  }
+
+  .banner {
+    background: darken($white, 5%);
+  }
+
+  .example {
+    background-color: $black;
+    color: $white;
+    pre,
+    code {
+      background-color: $white;
+      color: $black;
+    }
+  }
+
+  a,
+  a:visited {
+    color: darken($pink, 5%);
+
+    &:hover,
+    &:focus {
+      color: darken($blue, 15%);
+    }
+  }
+}
+
+.font-lg {
+  line-height: 2.75rem;
+  h1 {
+    font-size: clamp(3.5rem, 6vw, 4.5rem);
+  }
+
+  h2 {
+    font-size: clamp(3.25rem, 6vw, 4rem);
+  }
+
+  h3 {
+    font-size: clamp(3rem, 6vw, 3.5rem);
+  }
+
+  h4 {
+    font-size: clamp(2.75rem, 6vw, 3rem);
+  }
+
+  h5 {
+    font-size: clamp(2.5rem, 6vw, 2.5rem);
+  }
+
+  h6 {
+    font-size: clamp(2.25rem, 6vw, 2.25rem);
+  }
+
+  p {
+    font-size: clamp(2rem, 6vw, 2.25rem);
+  }
+
+  ul,
+  ol {
+    font-size: clamp(2rem, 6vw, 2rem);
+  }
+
+  article {
+    h2 {
+      font-size: clamp(2.75rem, 6vw, 2.5rem);
+    }
+
+    p {
+      font-size: clamp(2rem, 6vw, 2.25rem);
+    }
+
+    time {
+      font-size: clamp(1.75rem, 6vw, 1.75rem);
+    }
+
+    .taglist {
+      a {
+        font-size: clamp(1.5rem, 6vw, 1.5rem);
+      }
+    }
+
+    .tags {
+      h2 {
+        font-size: clamp(2.25rem, 6vw, 2.5rem);
+      }
+
+      h3 {
+        font-size: clamp(1.5rem, 6vw, 1.75rem);
+      }
+    }
+
+    pre {
+      font-size: clamp(1.75rem, 6vw, 2rem);
+    }
+  }
+
+  .btn-link {
+    font-size: clamp(2rem, 6vw, 2rem);
+  }
+
+  .social-media-list {
+    svg {
+      height: 4rem;
+    }
+  }
+
+  nav {
+    a {
+      font-size: clamp(2rem, 6vw, 2rem);
+    }
+  }
+}

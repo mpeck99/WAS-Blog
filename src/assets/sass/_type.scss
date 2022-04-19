@@ -1,0 +1,68 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-heading;
+
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(2.25rem, 6vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 6vw, 2.25rem);
+}
+
+h4 {
+  font-size: clamp(1.75rem, 6vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 6vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1.25rem, 6vw, 1.25rem);
+}
+
+a {
+  font-weight: 700;
+}
+
+ul,
+ol {
+  li {
+    margin-bottom: 1rem;
+
+    > ul,
+    ol {
+      margin-top: 1rem;
+    }
+
+    > pre {
+      margin-top: 0.75rem;
+    }
+  }
+}
+
+.list-columns {
+  width: 100%;
+
+  @media (min-width: 767px) {
+    width: 45rem;
+
+    height: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

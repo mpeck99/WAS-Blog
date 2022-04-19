@@ -1,0 +1,28 @@
+// Variables
+$black: #333;
+$pink: #fe6d73;
+$white: #fef9ef;
+$blue: #41b6e6;
+$yellow: #ffcb77;
+$green: #17c3b2;
+$green2: #18AD54;
+$purple: #c794af;
+$red: #FE343B;
+
+$ff-heading: 'Rubik', sans-serif;
+$ff-body: 'Montserrat', sans-serif;
+
+$border-gradient: linear-gradient(
+  to right,
+  $black,
+  $blue,
+  $purple,
+  $green,
+  $pink,
+  $yellow,
+  $pink,
+  $green,
+  $purple,
+  $blue,
+  $black
+);

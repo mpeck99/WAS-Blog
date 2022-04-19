@@ -1,0 +1,24 @@
+// Tables
+.table {
+  border-collapse: collapse;
+
+  thead {
+    background-color: $pink;
+
+    color: $black;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+    border: solid $white 2px;
+  }
+}
+
+.table-checked {
+  tr td {
+    &:not(:first-child) {
+      text-align: center;
+    }
+  }
+}
