@@ -240,3 +240,12 @@ img {
   border-bottom: 0.25rem solid $pink;
   font-size: clamp(1.25rem, 6vw, 1.5rem);
 }
+
+.row {
+  display: flex;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
