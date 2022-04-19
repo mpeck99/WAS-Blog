@@ -76,6 +76,16 @@
       color: darken($blue, 15%);
     }
   }
+
+  .theme {
+    background-color: $pink;
+    color: $black;
+
+    &:hover,
+    &:focus {
+      opacity: 0.98;
+    }
+  }
 }
 
 .font-lg {
@@ -160,6 +170,24 @@
   nav {
     a {
       font-size: clamp(2rem, 6vw, 2rem);
+    }
+  }
+
+  button {
+    max-width: 8rem;
+
+    i {
+      font-size: clamp(2rem, 6vw, 2rem);
+    }
+
+    &.font-size {
+      background-color: $pink;
+      color: $black;
+
+      &:hover,
+      &:focus {
+        opacity: 0.98;
+      }
     }
   }
 }
