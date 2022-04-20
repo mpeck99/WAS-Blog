@@ -20,9 +20,8 @@
   }
 }
 
-.btn-tab {
+.btns-accessibility {
   display: flex;
-  flex-direction: column;
 
   padding: 0.5rem;
 
@@ -36,6 +35,8 @@
 
   button {
     position: relative;
+
+    background-color: transparent;
 
     span {
       display: none;
@@ -72,7 +73,6 @@
     }
 
     &:hover, &:focus {
-      background-color: $white;
       color: $black;
 
       span {
