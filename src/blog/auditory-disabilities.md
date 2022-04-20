@@ -4,11 +4,12 @@ date: 2022-02-13
 intro: The emergence of new technologies have been bringing more video, audio, and multimedia content to the web. This means we need to provide textual alternatives for these users to access content. 
 tags: ['hearing', 'disabilities', 'fundamentals']
 ---
-<div class="float-right">
 
-![A refreshable braille display](https://dequeuniversity.com/assets/images/accessibility_fundamentals/braille-display3-600.jpg)
+<figure class="float-right">
+    <img src="https://dequeuniversity.com/assets/images/accessibility_fundamentals/braille-display3-600.jpg" alt="Refreshable Braille Display"  />
+    <figcaption>Refreshable Braille Display</figcaption>
+</figure>
 
-</div>
 
 ## Deafness
 While most of the web is accessible for users with auditory disabilities, as technology grows more and more audio, video, and multimedia content is making its way to the web. With this technology making its way onto websites as developers we need to make sure that theres way for users with auditory disabilities to still be able to navigate and understand the information out site has to offer. 
