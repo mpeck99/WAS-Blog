@@ -4,7 +4,7 @@
   padding: 1rem;
   margin: 1rem 0;
 
-  background-color: $blue;
+  background-color: $pink;
   border-radius: 0.25rem;
   box-shadow: var(--box-shadow);
 
@@ -43,12 +43,33 @@
     }
   }
 
-  a {
-    color: $blue; 
+  a, p > a {
+    color: darken($purple, 20%);
 
     &:hover,
     &:focus {
-      color: $pink;
+      color: darken($blue, 35%);
+      text-decoration: underline !important;
+    }
+
+    &.no-underline-border {
+      text-decoration: none;
+      
+      padding: 0.25rem;
+      &:hover,
+      &:focus {
+      border: 1px solid darken($blue, 35%);
+      }
+    }
+
+    &.low-contrast {
+      color: $yellow;
+      
+      padding: 0.25rem;
+      &:hover,
+      &:focus {
+        border: 1px solid darken($yellow, 35%);
+      }
     }
   }
 }
