@@ -243,3 +243,18 @@ footer {
     flex-direction: column;
   }
 }
+
+.list-ui {
+  display: flex;
+
+  list-style-type: none !important; 
+
+  padding-left: 0.5rem;
+
+  li {
+    padding: 0.25rem;
+    &:not(:nth-child(1)){
+      margin-left: 1rem;
+    }
+  }
+}
