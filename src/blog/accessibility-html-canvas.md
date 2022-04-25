@@ -1,7 +1,7 @@
 ---
 title: Making your HTML canvas elements accessible
 date: 2022-04-19
-intro: The canvas element renders data as pixels on a screen the same way as a .jpg or .png would. While it is supported in all browsers, it is not readily accessible to screen readers without adding some JavaScript, ARIA or having an internal fallback in the content. Read more to learn some ways to ensure your HTML canvas elements are accessible as possible.
+intro: The canvas element renders data as pixels on a screen the same way as a .jpg or .png would. While it is supported in all browsers, it is not readily accessible to screen readers without adding some JavaScript, ARIA or having an internal fallback in the content.
 tags: ['accessibility', 'alt', 'HTML', 'Canvas']
 ---
 
