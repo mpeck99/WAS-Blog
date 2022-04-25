@@ -31,6 +31,24 @@
       color: $pink;
     }
   }
+
+  .btn-bad {
+    color: darken($purple, 20%);
+    font-size: 1.25rem;
+
+    text-decoration: none;
+  }
+  
+  .btn-good {
+    color: darken($purple, 20%);
+
+    border: 1px solid darken($purple, 20%); 
+    border-radius: 0.25rem;
+
+    padding: 0.25rem;
+
+    text-decoration: none;
+  }
 }
 
 .theme-light {
