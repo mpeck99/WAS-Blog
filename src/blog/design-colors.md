@@ -38,7 +38,7 @@ When I say differentiation I mean meaning you should add some additional such as
 <div class="example">
     <h3>Bad - Low contrast example</h3>
     <p>This link is not accessible because its does not have a contrast ratio of 3:1. Its ratio is only 1.49:1, which does'nt meet minimum standards.</p>
-    <p><a href="#0" class="low-contrast">Color contrast</a> is important!</p>
+    <p><a href="#0" class="low-contrast-link">Color contrast</a> is important!</p>
 </div>
 
 <div class="example">
