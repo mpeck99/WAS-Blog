@@ -70,8 +70,9 @@ main {
   a {
     display: block;
 
-    text-decoration: none;
+    padding: 0.5rem 1rem;
 
+    text-decoration: none;
     color: $white;
 
     &:hover,
@@ -148,7 +149,7 @@ footer {
   padding-left: 0;
 
   svg {
-    height: 2rem;
+    height: 2.75rem;
     fill: $blue;
   }
 
