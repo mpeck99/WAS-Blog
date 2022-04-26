@@ -1,14 +1,32 @@
 // Buttons
-.btn-link {
-  padding: 0.25rem 1rem;
+.btn {
+  padding: 0.55rem 1rem;
 
+  box-shadow: var(--box-shadow);
+
+  background-color: $black;
+  border-radius: 0.25rem;
+
+  i {
+    color: white;
+  }
+
+  &:hover, &:focus {
+    i {
+       color: $pink;
+    }
+  }
+}
+.btn-read-more {
+  padding: 0.25rem 1rem;
+  
   background-color: $black;
   border-radius: 25rem;
 
   font-weight: 700;
   text-decoration: none;
 
-  border: 0.2rem solid $white;
+  border: 0.2rem solid transparent;
 
   &:hover,
   &:focus {
@@ -96,4 +114,8 @@ button {
   padding: 10px 20px;
 
   color: $white;
+}
+
+.btn-no-padding {
+  padding: 0.25rem;
 }
