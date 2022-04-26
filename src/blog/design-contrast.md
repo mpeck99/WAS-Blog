@@ -1,7 +1,7 @@
 ---
 title: Accessibility and Contrast
 date: 2022-04-26
-intro: While building websites we must make sure that our HTML is semantically correct, but we also need to make sure that we are designing with accessibility in mind.
+intro: 1 in 12 people in the United States have some form of color deficiency, more commonly found in men (8%) than women (0.4%). Also there are roughly 3x more individuals who have low vision then there are with total blindness. This is why it is important to make sure that we have sufficient contrast between elements on our page.
 tags: ['design', 'accessibility']
 ---
 
