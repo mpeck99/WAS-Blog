@@ -4,7 +4,7 @@
   padding: 1rem;
   margin: 1rem 0;
 
-  background-color: $pink;
+  background-color: lighten($purple, 5%);
   border-radius: 0.25rem;
   box-shadow: var(--box-shadow);
 
@@ -62,7 +62,7 @@
       }
     }
 
-    &.low-contrast {
+    &.low-contrast-link {
       color: $yellow;
       
       padding: 0.25rem;
@@ -71,5 +71,59 @@
         border: 1px solid darken($yellow, 35%);
       }
     }
+  }
+}
+
+// Example specific CSS
+.low-contrast {
+  padding: 0.5rem;
+
+  background-color: $yellow;
+  border-radius: 0.25rem;
+
+  color: $pink;
+}
+
+.low-contrast-radio {
+  label {
+    display: inline-block;
+  }
+  
+  input[type='radio']{
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 1rem;
+    height: 1rem;
+
+    padding: 0.5rem;
+
+    position: relative;
+
+    border-radius: 50%;
+    border: 1px solid lighten($black, 70%);
+
+    &:before {
+      content: '';
+      position: absolute;
+
+      width: 0.5rem;
+      height: 0.5rem;
+
+      left: 0.25rem;
+      top: 0.25rem;
+
+      background-color: $white;
+      border-radius: 50%;
+    }
+
+    &:checked:before {
+      background-color: lighten($black, 70%);
+      
+    }
+
+
   }
 }
