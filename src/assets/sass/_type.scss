@@ -6,12 +6,12 @@ h5,
 h6 {
   font-family: $ff-heading;
 
-  line-height: 1.25;
+  line-height: 1.5;
 
   margin: 1rem 0 0 0;
 
   ~p {
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -73,4 +73,8 @@ ol {
     flex-direction: column;
     flex-wrap: wrap;
   }
+} 
+
+p {
+  margin-bottom: 1.75rem;
 }
