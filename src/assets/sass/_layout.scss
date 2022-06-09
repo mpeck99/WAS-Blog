@@ -193,18 +193,18 @@ footer {
   align-items: center;
 
   .inner {
-    max-width: 1400px;
+    max-width: 1900px;
 
-    padding: 2rem;
+    padding: clamp(1rem, 0.636rem + 1.82vw, 2rem);
   }
 
   .article-wrapper {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
 .layout-post {
-  padding: 2rem;
+  padding: clamp(1rem, 0.636rem + 1.82vw, 2rem);
 
   h1 {
     margin-bottom: 0;
