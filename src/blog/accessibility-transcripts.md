@@ -68,7 +68,7 @@ Any information provided off-screen can be provided by italicizing the spoken la
 The best way to to do this is to use a label for the speaker. This can be a name or a role in all caps followed by a colon, then the spoken text. Uppercase text formatting is generally reserved for descriptive wording/labels. Mixed cased text formatting should be reserved for the actual dialog or narration. 
 
 ### Transcripts should use punctuation to convey emphasis whenever possible, rather than writing extra text to explain the emphasis
-This helps ensure that transcripts are present4ed in a clean format. Sometimes punctuation may not be enough so you may need to use descriptive wording. 
+This helps ensure that transcripts are presented in a clean format. Sometimes punctuation may not be enough so you may need to use descriptive wording. 
 
 ### Transcript must not reveal intentionally-withheld information in content before its appropriate time
 If there is intentionally withheld information you must not reveal it sooner that it should be. If you reveal the content sooner in the transcript it can spoil the experience for your user. 
