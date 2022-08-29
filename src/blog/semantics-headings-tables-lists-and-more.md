@@ -46,30 +46,53 @@ Any items that should be a list or if they are a group of links should be in one
 <div class="example" aria-labelledby="list-good-example" tabindex="0">
   <h2 id="list-good-example">Good semantic lists</h2>
     <h3>Ordered list</h3>
-    <ol>
+    <div class="row">
+      <ol>
       <li>List item 1</li>
       <li>List item 2</li>
       <li>List item 3</li>
     </ol>
+    <pre><code>&lt;ol>
+  &lt;li>List item 1&lt;/li>
+  &lt;li>List item 2&lt;/li>
+  &lt;li>List item 3&lt;/li>
+&lt;/ol></code></pre>
+    </div>
     <h3>Unordered list</h3>
-    <ul>
+    <div class="row"><ul>
       <li>List item 1</li>
       <li>List item 2</li>
       <li>List item 3</li>
     </ul>
+    <pre><code>&lt;ul>
+  &lt;li>List item 1&lt;/li>
+  &lt;li>List item 2&lt;/li>
+  &lt;li>List item 3&lt;/li>
+&lt;/ul></code></pre></div>
     <h3>Definition list</h3>
+    <div class="row">
     <dl>
       <dt>Term 1</dt>
         <dd>
           Some cool term definition
         </dd>
     </dl>
+    <pre>
+      <code>&lt;dl>
+      &lt;dt>Term 1&lt;/dt>
+        &lt;dd>
+          Some cool term definition
+        &lt;/dd>
+    &lt;/dl></code>
+    </pre>
+    </div>
 </div>
 <div class="example" aria-labelledby="list-bad-example" tabindex="0">
   <h2 id="list-bad-example">Bad semantic list</h2>
-  <p>1. Bad list item<br>2. Bad list item<br>3. Bad list item</p>
-  <h3>HTML</h3>
-  <pre><code>&lt;p>1. Bad list item&lt;br&gt;<br>2. Bad list item&lt;br&gt;<br>3. Bad list item&lt;/p&gt;</code></pre>
+  <div class="row">
+    <p>1. Bad list item<br>2. Bad list item<br>3. Bad list item</p>
+    <pre><code>&lt;p>1. Bad list item&lt;br&gt;<br>2. Bad list item&lt;br&gt;<br>3. Bad list item&lt;/p&gt;</code></pre>
+  </div>
 </div>
 
 ## Tables

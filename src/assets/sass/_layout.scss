@@ -301,6 +301,10 @@ footer {
 .row {
   display: flex;
 
+  pre {
+    margin-left: 2rem;
+  }
+
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
