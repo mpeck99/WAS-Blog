@@ -1,5 +1,5 @@
 ---
-title: Semantic HTMl - Headings, Tables, Lists, and more.
+title: Semantic HTML - Headings, Tables, Lists, and more.
 date: 2022-08-28
 intro: In a past post I went into the hierarchial levels of headings but there are some more best practices and examples I wish to share. Also tables, lists, paragraphs all need to be semantically marked up to ensure that our users can access the information on our site as easily as possible.
 tags: ['accessibility', 'HTML', 'semantics']
@@ -77,69 +77,65 @@ Tables are a beast in their own thing. They never truly will be 100% accessible 
 - Data-sets that appropriately link the data to the correct headers
 - Title - should have an `aria-labelled` to linking to a visible heading above the table. If there is no visible heading above the table then should have an `aria-label` or a caption.
 
-#### Basic table example
-<table class="table" tabindex="0">
-  <caption>
-    <strong>Personal Bests</strong>
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">1 mile</th>
-      <th scope="col">5 km</th>
-      <th scope="col">10 km</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Mary</td>
-      <td>8:32</td>
-      <td>28:04</td>
-      <td>1:01:16</td>
-    </tr>
-    <tr>
-      <td>Betsy</td>
-      <td>7:43</td>
-      <td>26:47</td>
-      <td>55:38</td>
-    </tr>
-  </tbody>
-</table>
+<div class="example" aria-labelledby="basic-table">
+  <h2 id="basic-table">Basic table example</h2>
+  <table class="table" tabindex="0" aria-labelledby="basic-table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">1 mile</th>
+        <th scope="col">5 km</th>
+        <th scope="col">10 km</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mary</td>
+        <td>8:32</td>
+        <td>28:04</td>
+        <td>1:01:16</td>
+      </tr>
+      <tr>
+        <td>Betsy</td>
+        <td>7:43</td>
+        <td>26:47</td>
+        <td>55:38</td>
+      </tr>
+    </tbody>
+  </table>
+  <pre>
+    <code>
+    &lt;table class="table" tabindex="0" aria-labelledby="basic-table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Name&lt;/th&gt;
+      &lt;th scope="col"&gt;1 mile&lt;/th&gt;
+      &lt;th scope="col"&gt;5 km&lt;/th&gt;
+      &lt;th scope="col"&gt;10 km&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mary&lt;/td&gt;
+      &lt;td&gt;8:32&lt;/td&gt;
+      &lt;td&gt;28:04&lt;/td&gt;
+      &lt;td&gt;1:01:16&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Betsy&lt;/td&gt;
+      &lt;td&gt;7:43&lt;/td&gt;
+      &lt;td&gt;26:47&lt;/td&gt;
+      &lt;td&gt;55:38&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+    </code>
+  </pre>
+</div>
 
-```
-<table class="table">
-  <caption>
-    <strong>Personal Bests</strong>
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">1 mile</th>
-      <th scope="col">5 km</th>
-      <th scope="col">10 km</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Mary</td>
-      <td>8:32</td>
-      <td>28:04</td>
-      <td>1:01:16</td>
-    </tr>
-    <tr>
-      <td>Betsy</td>
-      <td>7:43</td>
-      <td>26:47</td>
-      <td>55:38</td>
-    </tr>
-  </tbody>
-</table>
-```
-### Table with group headers
-<table  class="table table-colgroup" tabindex="0">
-  <caption>
-    Table with colgroup
-  </caption>
+<div class="example" aria-labelledby="group-headers">
+  <h2 id="group-headers">Table with group headers example</h2>
+  <table  class="table table-colgroup" tabindex="0" aria-labelledby="group-headers">
   <thead>
     <tr>
       <td rowspan="2">&nbsp;</td>
@@ -160,87 +156,91 @@ Tables are a beast in their own thing. They never truly will be 100% accessible 
     </tr>
   </tbody>
 </table>
+<pre>
+<code>
+&lt;table  class="table table-colgroup" tabindex="0" aria-labelledby="group-headers"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&gt;&nbsp;&lt;/td&gt;
+      &lt;th colspan="2" scope="colgroup" class="theader"&gt;Heading 1&lt;/th&gt;
+      &lt;th colspan="2" scope="colgroup" class="theader"&gt;Heading 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;Heading 3&lt;/th&gt;
+      &lt;td colspan="2"&gt;Data&lt;/td&gt;
+      &lt;td colspan="2"&gt;Data&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;Heading 4&lt;/th&gt;
+      &lt;td colspan="2"&gt;Data&lt;/td&gt;
+      &lt;td colspan="2"&gt;Data&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+<pre>
+</div>
 
-```
-<table  class="table table-colgroup">
-  <caption>
-    Table with colgroup
-  </caption>
-  <thead>
-    <tr>
-      <td rowspan="2">&nbsp;</td>
-      <th colspan="2" scope="colgroup" class="theader">Heading 1</th>
-      <th colspan="2" scope="colgroup" class="theader">Heading 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Heading 3</th>
-      <td colspan="2">Data</td>
-      <td colspan="2">Data</td>
-    </tr>
-    <tr>
-      <th scope="row">Heading 4</th>
-      <td colspan="2">Data</td>
-      <td colspan="2">Data</td>
-    </tr>
-  </tbody>
-</table>
-```
-### Complex tables
-If a table has complex data you will need to use headers and ID's this will help associate the correct data with the correct header.
-<table class="table-complex" tabindex="0">
-  <thead>
-    <tr>
-      <th role="columnheader" rowspan="3" id="h1">Header 1</th>
-      <th colspan="3" role="columnheader" id="h2">Header 2</th>
-    </tr>
-    <tr>
-      <th role="columnheader" id="s1">Subheader 1</th>
-      <th role="columnheader" id="s2">Subheader 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="rowheader" id="row1" headers="h1">Row header 1</th>
-      <td headers="row1 h2 s1">Data 1</td>
-      <td headers="h2 s2 row1">Data 2</td>
-    </tr>
-    <tr>
-      <th scope="rowheader" id="row2" headers="h1">Row header 2</th>
-      <td headers="h2 s1 row2">Data 3</td>
-      <td headers="h2 s2 row2">Data 4</td>
-    </tr>
-  </tbody>
-</table>
+<div class="example" aria-labelledby="complex">
+  <h2 id="complex">Complex table example</h2>
+  <p>If a table has complex data you will need to use headers and ID's this will help associate the correct data with the correct header.</p>
+  <table class="table-complex" tabindex="0" aria-labelledby="complex">
+    <thead>
+      <tr>
+        <th role="columnheader" rowspan="3" id="h1">Header 1</th>
+        <th colspan="3" role="columnheader" id="h2">Header 2</th>
+      </tr>
+      <tr>
+        <th role="columnheader" id="s1">Subheader 1</th>
+        <th role="columnheader" id="s2">Subheader 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="rowheader" id="row1" headers="h1">Row header 1</th>
+        <td headers="row1 h2 s1">Data 1</td>
+        <td headers="h2 s2 row1">Data 2</td>
+      </tr>
+      <tr>
+        <th scope="rowheader" id="row2" headers="h1">Row header 2</th>
+        <td headers="h2 s1 row2">Data 3</td>
+        <td headers="h2 s2 row2">Data 4</td>
+      </tr>
+    </tbody>
+  </table>
 
-```
-<table class="table table-complex k-table">
-  <thead>
-    <tr>
-      <th role="columnheader" rowspan="3" id="h1">Header 1</th>
-      <th colspan="3" role="columnheader" id="h2">Header 2</th>
-    </tr>
-    <tr>
-      <th role="columnheader" id="s1">Subheader 1</th>
-      <th role="columnheader" id="s2">Subheader 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="rowheader" id="row1" headers="h1">Row header 1</th>
-      <td headers="row1 h2 s1">Data 1</td>
-      <td headers="h2 s2 row1">Data 2</td>
-    </tr>
-    <tr>
-      <th scope="rowheader" id="row2" headers="h1">Row header 2</th>
-      <td headers="h2 s1 row2">Data 3</td>
-      <td headers="h2 s2 row2">Data 4</td>
-    </tr>
-  </tbody>
-</table>
+  <pre>
+    <code>
+&lt;table class="table-complex" tabindex="0" aria-labelledby="complex"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th role="columnheader" rowspan="3" id="h1"&gt;Header 1&lt;/th&gt;
+      &lt;th colspan="3" role="columnheader" id="h2"&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th role="columnheader" id="s1"&gt;Subheader 1&lt;/th&gt;
+      &lt;th role="columnheader" id="s2"&gt;Subheader 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="rowheader" id="row1" headers="h1"&gt;Row header 1&lt;/th&gt;
+      &lt;td headers="row1 h2 s1"&gt;Data 1&lt;/td&gt;
+      &lt;td headers="h2 s2 row1"&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope="rowheader" id="row2" headers="h1"&gt;Row header 2&lt;/th&gt;
+      &lt;td headers="h2 s1 row2"&gt;Data 3&lt;/td&gt;
+      &lt;td headers="h2 s2 row2"&gt;Data 4&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+    </code>
+  </pre>
+</div>
 
-```
 
 ## Other content
 
