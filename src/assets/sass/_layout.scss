@@ -26,7 +26,7 @@ body {
 
   font-size: 20px;
 
-  line-height: 1.75rem;
+  line-height: 2rem;
 }
 
 main {
@@ -261,8 +261,7 @@ footer {
 }
 
 .active {
-  border-bottom: 0.25rem solid $pink;
-  font-size: clamp(1.25rem, 6vw, 1.5rem);
+  color: $blue !important;
 }
 
 .row {
