@@ -61,6 +61,7 @@
     @for $i from 1 through $length {
       &:nth-child(#{$length}n + #{$i}) {
         header {
+          margin: clamp(-1.5rem, -0.818rem + -0.91vw, -1rem) clamp(-1.5rem, -0.818rem + -0.91vw, -1rem) 2.5rem;
           background: nth($colors, $i);
           border-radius: 0.25rem;
 
