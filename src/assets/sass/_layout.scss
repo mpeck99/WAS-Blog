@@ -265,7 +265,7 @@ footer {
   }
 
   .article-wrapper {
-    max-width: 100%;
+    max-width: calc(100% - 3rem);
   }
 }
 
@@ -290,10 +290,6 @@ footer {
     margin: 1rem;
 
     justify-content: center;
-  }
-
-  article {
-    max-width: 20rem;
   }
 }
 

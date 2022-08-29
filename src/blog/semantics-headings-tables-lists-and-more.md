@@ -1,5 +1,5 @@
 ---
-title: Semantic HTML - Headings, Tables, Lists, and more.
+title: Semantic HTML  - Headings, Tables, Lists, and more.
 date: 2022-08-28
 intro: In a past post I went into the hierarchial levels of headings but there are some more best practices and examples I wish to share. Also tables, lists, paragraphs all need to be semantically marked up to ensure that our users can access the information on our site as easily as possible.
 tags: ['accessibility', 'HTML', 'semantics']

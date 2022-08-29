@@ -1,7 +1,7 @@
 // Articles
 .article-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
 
   padding: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
   
@@ -55,7 +55,7 @@
       bottom: 0.55rem;
     }
 
-    $colors: var(--clr-blue), var(--clr-pink), var(--clr-pink), var(--clr-yellow), var(--clr-purple);
+    $colors: var(--clr-blue), var(--clr-pink), var(--clr-green), var(--clr-yellow), var(--clr-purple);
     $length: length($colors);
 
     @for $i from 1 through $length {
@@ -249,7 +249,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1200px) {
     display: block;
   }
 }
