@@ -4,11 +4,11 @@
   padding: 1rem;
   margin: 1rem 0;
 
-  background-color: lighten($purple, 5%);
+  background-color: hsl(328, 31%, 75%);
   border-radius: 0.25rem;
   box-shadow: var(--box-shadow);
 
-  color: $black;
+  color: var(--clr-black);
 }
 
 .example {
@@ -20,12 +20,12 @@
   padding: 1rem;
   margin-bottom: 1rem;
 
-  background-color: $white;
+  background-color: var(--clr-white);
   border-radius: 0.25rem;
 
   box-shadow: var(--box-shadow);
 
-  color: $black;
+  color: var(--clr-black);
 
   img {
     max-width: 10rem;
@@ -36,21 +36,21 @@
     margin-top: 1rem;
     padding: 0.5rem;
 
-    background-color: $black;
+    background-color: hsl(0deg, 0%, 8%);
 
-    color: $white;
+    color: var(--clr-white);
 
     code {
-      background-color: $black;
+      background-color: hsl(0deg, 0%, 8%);
     }
   }
 
   a, p > a {
-    color: darken($purple, 20%);
+    color: hsl(328, 31%, 20%);
 
     &:hover,
     &:focus {
-      color: darken($blue, 35%);
+      color: hsl(197, 77%, 35%);
       text-decoration: underline !important;
     }
 
@@ -60,23 +60,23 @@
       padding: 0.25rem;
       &:hover,
       &:focus {
-      border: 1px solid darken($blue, 35%);
+      border: 1px solid hsl(197, 77%, 35%);
       }
     }
 
     &.low-contrast-link {
-      color: $yellow;
+      color: var(--clr-yellow);
       
       padding: 0.25rem;
       &:hover,
       &:focus {
-        border: 1px solid darken($yellow, 35%);
+        border: 1px solid hsl(37, 100%, 73%);
       }
     }
   }
 
   h2, h3, h4, h5, h6 {
-    color: hsl(358, 99%, 45%);
+    color: var(--clr-teald);
   }
 
   h2 {
@@ -84,27 +84,34 @@
   }
 
   h3 {
-    color: hsl(358, 99%, 35%);
+    color: hsl(177, 55%, 25%);
     margin-top: 0;
     font-size: 2rem;
+  }
+
+  .table {
+    th, td {
+      border: 0.15rem solid var(--clr-black);
+    }
+    
   }
 }
 
 #heading-bad-example {
-  color: hsl(358, 99%, 45%);
+  color: var(--clr-teald);
   font-size: 2.25rem;
   font-weight: 700;
-  font-family: $ff-heading;
+  font-family: var(--ff-heading);
 }
 
 // Example specific CSS
 .low-contrast {
   padding: 0.5rem;
 
-  background-color: $yellow;
+  background-color: var(--clr-yellow);
   border-radius: 0.25rem;
 
-  color: $pink;
+  color: var(--clr-pink);
 }
 
 .low-contrast-radio {
@@ -126,7 +133,7 @@
     position: relative;
 
     border-radius: 50%;
-    border: 1px solid lighten($black, 70%);
+    border: 1px solid hsl(0, 0%, 70%);
 
     &:before {
       content: '';
@@ -138,12 +145,12 @@
       left: 0.25rem;
       top: 0.25rem;
 
-      background-color: $white;
+      background-color: var(--clr-white);
       border-radius: 50%;
     }
 
     &:checked:before {
-      background-color: lighten($black, 70%);
+      background-color: hsl(0, 0%, 70%);
       
     }
 

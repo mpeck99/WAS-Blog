@@ -6,6 +6,43 @@
     0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.34),
     2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.34),
     5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.34);
+
+  --clr-black: hsl(0, 0%, 15%);
+  --clr-pink: hsl(358, 99%, 71%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-blue: hsl(197, 77%, 58%);
+  --clr-yellow: hsl(37, 100%, 73%);
+  --clr-green: hsl(174, 79%, 43%);
+  --clr-green2: hsl(144, 76%, 39%);
+  --clr-purple: hsl(328, 31%, 68%);
+  --clr-red: hsl(358, 99%, 60%);
+
+  --clr-blackalt: hsl(191, 52%, 12%);
+  --clr-maroon: hsl(327, 44%, 22%);
+  --clr-pinkalt: hsl(334, 77%, 58%);
+  --clr-whitealt: hsl(0, 0%, 80%);
+  --clr-teal: hsl(177, 78%, 55%);
+  --clr-teald: hsl(177, 78%, 15%);
+  --clr-yellowalt: hsl(59, 100%, 75%);
+
+
+--ff-heading: 'Rubik', sans-serif;
+--ff-body: 'Montserrat', sans-serif;
+
+--border-gradient: linear-gradient(
+  to right,
+  hsl(0, 0%, 20%),
+  hsl(197, 77%, 58%),
+  hsl(328, 31%, 68%),
+  hsl(174, 79%, 43%),
+  hsl(358, 99%, 71%),
+  hsl(37, 100%, 73%),
+  hsl(358, 99%, 71%),
+  hsl(174, 79%, 43%),
+  hsl(328, 31%, 68%),
+  hsl(197, 77%, 58%),
+  hsl(0, 0%, 20%)
+);
 }
 
 html,
@@ -21,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  font-family: $ff-body;
+  font-family: var(--ff-body);
   font-weight: 400;
 
   font-size: 20px;
@@ -48,7 +85,7 @@ main {
 
   border-bottom: 0.5rem solid;
   box-shadow: var(--box-shadow);
-  border-image: $border-gradient 10;
+  border-image: var(--border-gradient) 10;
 
   @media (max-width: 767px) {
     display: flex;
@@ -74,7 +111,7 @@ main {
     padding: 0.5rem 1rem;
 
     text-decoration: none;
-    color: $white;
+    color: --clr-white;
   }
 
   .site-icon {
@@ -123,7 +160,7 @@ main {
 
             display: block;
 
-            background: $pink;
+            background: var(--clr-pink);
           }
           &::before {
             content: '';
@@ -179,7 +216,7 @@ footer {
 
   svg {
     height: 2.75rem;
-    fill: $blue;
+    fill: var(--clr-blue);
   }
 
   li {
@@ -193,7 +230,7 @@ footer {
       &:hover,
       &:focus {
         svg {
-          fill: $pink;
+          fill: var(--clr-pink);
         }
       }
     }
@@ -261,7 +298,7 @@ footer {
 }
 
 .active {
-  color: $blue !important;
+  color: -var(--clr-blue) !important;
 }
 
 .row {

@@ -1,28 +1,36 @@
-// Variables
-$black: hsl(0, 0%, 20%);
-$pink: hsl(358, 99%, 71%);
-$white: hsl(0, 0%, 100%);
-$blue: hsl(197, 77%, 58%);
-$yellow: hsl(37, 100%, 73%);
-$green: hsl(174, 79%, 43%);
-$green2: hsl(144, 76%, 39%);
-$purple: hsl(328, 31%, 68%);
-$red: hsl(358, 99%, 60%);
+// // Variables
+// var(--clr-black): hsl(0, 0%, 20%);
+// var(--clr-pink): hsl(358, 99%, 71%);
+// --clr-white: hsl(0, 0%, 100%);
+// --clr-blue: hsl(197, 77%, 58%);
+// --clr-yellow: hsl(37, 100%, 73%);
+// var(--clr-green): hsl(174, 79%, 43%);
+// var(--clr-green)2: hsl(144, 76%, 39%);
+// --clr-purple: hsl(328, 31%, 68%);
+// --clr-red: hsl(358, 99%, 60%);
 
-$ff-heading: 'Rubik', sans-serif;
-$ff-body: 'Montserrat', sans-serif;
+// var(--clr-black)alt: hsl(191, 52%, 12%);
+// --clr-maroon: hsl(327, 44%, 22%);
+// var(--clr-pink): hsl(334, 77%, 58%);
+// --clr-white: hsl(0, 0%, 80%);
+// --clr-teal: hsl(177, 78%, 55%);
+// --clr-teald: hsl(177, 78%, 15%);
+// --clr-yellow: hsl(59, 100%, 75%);
 
-$border-gradient: linear-gradient(
-  to right,
-  $black,
-  $blue,
-  $purple,
-  $green,
-  $pink,
-  $yellow,
-  $pink,
-  $green,
-  $purple,
-  $blue,
-  $black
-);
+// var(--ff-heading): 'Rubik', sans-serif;
+// var(--ff-body): 'Montserrat', sans-serif;
+
+// --clr-border-gradient: linear-gradient(
+//   to right,
+//   var(--clr-black),
+//   --clr-blue,
+//   --clr-purple,
+//   var(--clr-green),
+//   var(--clr-pink),
+//   --clr-yellow,
+//   var(--clr-pink),
+//   var(--clr-green),
+//   --clr-purple,
+//   --clr-blue,
+//   var(--clr-black)
+// );

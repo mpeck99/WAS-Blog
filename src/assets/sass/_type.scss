@@ -4,8 +4,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: $green;
-  font-family: $ff-heading;
+  color: var(--clr-pink);
+  font-family: var(--ff-heading);
 
   line-height: 1.5;
 

@@ -12,7 +12,7 @@ input[type='radio']{
     position: relative;
 
     border-radius: 50%;
-    border: 1px solid $black;
+    border: 1px solid var(--clr-black);
 
     &:before {
       content: '';
@@ -24,11 +24,11 @@ input[type='radio']{
       left: 0.25rem;
       top: 0.25rem;
 
-      background-color: $white;
+      background-color: --clr-white;
       border-radius: 50%;
     }
 
     &:checked:before {
-      background-color: $black;
+      background-color: var(--clr-black);
     }
   }

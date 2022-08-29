@@ -4,7 +4,7 @@
 
   // box-shadow: var(--box-shadow);
 
-  background-color: $black;
+  background-color: var(--clr-black);
   border-radius: 0.25rem;
 
   i {
@@ -14,7 +14,7 @@
   &:hover,
   &:focus {
     i {
-      color: $pink;
+      color: var(--clr-pink);
     }
   }
 }
@@ -23,10 +23,10 @@
  
   display: inline-block;
   
-  background: $black;
+  background: var(--clr-black);
   background-size: 200% 100%;
   background-position: -100%;
-  border: 0.3rem solid $black;
+  border: 0.3rem solid var(--clr-black);
   border-radius: 0.5rem;
 
   -webkit-background-clip: text;
@@ -37,8 +37,8 @@
   &:hover,
   &:focus {
     text-decoration: underline;
-    color: $white;
-    background-color: $black;
+    color: --clr-white;
+    background-color: var(--clr-black);
 
     opacity: 0.9;
 
@@ -71,7 +71,7 @@
   bottom: -9rem;
   right: 0;
 
-  background-color: $green;
+  background-color: var(var(--clr-green));
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 
@@ -91,8 +91,8 @@
 
       text-align: right;
 
-      background-color: $pink;
-      color: $black;
+      background-color: var(--clr-pink);
+      color: var(--clr-black);
       box-shadow: var(--box-shadow);
 
       &:after {
@@ -105,7 +105,7 @@
         width: 0;
         height: 0;
         border-top: 15px solid transparent;
-        border-left: 12px solid $pink;
+        border-left: 12px solid var(--clr-pink);
         border-bottom: 15px solid transparent;
       }
     }
@@ -116,7 +116,7 @@
 
     &:hover,
     &:focus {
-      color: $black;
+      color: var(--clr-black);
 
       span {
         display: flex;
@@ -130,7 +130,7 @@
 }
 
 button {
-  background-color: $black;
+  background-color: var(--clr-black);
   border-radius: 0.25rem;
   border: none;
 
@@ -138,7 +138,7 @@ button {
 
   padding: 10px 20px;
 
-  color: $white;
+  color: var(--clr-white);
 }
 
 .btn-no-padding {

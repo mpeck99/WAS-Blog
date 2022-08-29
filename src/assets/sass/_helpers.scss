@@ -24,9 +24,9 @@
   left: 0;
   z-index: 5000;
 
-  color: $black !important;
-  background-color: $pink;
-  border: $blue solid 0.1rem;
+  color: var(--clr-black) !important;
+  background-color: var(--clr-pink);
+  border: --clr-blue solid 0.1rem;
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 
@@ -47,9 +47,9 @@
 
 // Font-icons
 .checked {
-  color: $green2;
+  color: var(--clr-green)2;
 }
 
 .unchecked {
-  color: $red;
+  color: --clr-red;
 }
