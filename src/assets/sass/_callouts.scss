@@ -75,9 +75,24 @@
     }
   }
 
+  h2, h3, h4, h5, h6 {
+    color: hsl(358, 99%, 55%);
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
   h3 {
     margin-top: 0;
   }
+}
+
+#heading-bad-example {
+  color: hsl(358, 99%, 55%);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: $ff-heading;
 }
 
 // Example specific CSS
