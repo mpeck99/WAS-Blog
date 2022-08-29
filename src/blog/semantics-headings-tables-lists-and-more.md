@@ -18,12 +18,16 @@ You need to ensure all things that should be headings are actual headings (h1, h
 ### Heading examples
 
 <div class="example" aria-labelledby="heading-good-example" tabindex="0">
-   <h2 id="heading-good-example">Good example of semantic headings</h2>
+  <h2 id="heading-good-example">Good example of semantic headings</h2>
+  <pre>
+    <code>&lt;h2 id="heading-good-example">Good example of semantic headings&lt;/h2&gt;</code>
+  </pre>
   <p>This heading is a good example of a semantic heading because it allows screen-reader users to be able to easily look for a heading/section of content since it appropriately marked up.</p>
 </div>
 <div class="example" aria-labelledby="heading-bad-example" tabindex="0">
   <p id="heading-bad-example">Heading that is not semantic</p>
-  <p>This heading isn't semantically set up as a real heading so it causes screen-readers to not notice it as a heading. Looks like a heading isn't a heading. </p>
+  <pre><code>&lt;p id="heading-bad-example">Heading that is not semantic&lt;/p&gt;</code></pre>
+  <p>Looks like a heading isn't a heading. This heading isn't semantically set up as a real heading so it causes screen-readers to not notice it as an actual heading.</p>
 </div>
 
 ## Lists
