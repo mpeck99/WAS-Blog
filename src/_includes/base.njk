@@ -49,13 +49,13 @@
       {{ content | safe }}
      </main> 
      {% elif (pageLayout == 'subpage' ) %}
-     <main class="layout layout-subpage" aria-label="Main content">
+     <main class="layout layout-subpage" aria-label="Main content" id="main">
       <div class="inner">
         {{ content | safe }}
       </div>
     </main>
     {% else %}
-    <main class="layout layout-post" aria-label="Main content">
+    <main class="layout layout-post" aria-label="Main content" id="main">
       <div class="inner">
         {{ content | safe }}
       </div>
