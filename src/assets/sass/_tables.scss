@@ -1,5 +1,7 @@
 // Tables
 .table {
+  margin-bottom: 1rem;
+
   border-collapse: collapse;
 
   thead {
@@ -20,5 +22,34 @@
     &:not(:first-child) {
       text-align: center;
     }
+  }
+}
+
+.table-complex {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+
+  th {
+    background-color: $pink;
+    color: $black;
+  }
+
+  th, td{
+    border: 0.2rem solid $white;
+
+    padding: 0.25rem;
+  }
+}
+
+.table-colgroup{
+  margin-bottom: 1rem;
+  thead {
+    background-color: transparent !important;
+  }
+  td {
+    color: $white;
+  }
+  .theader {
+    background-color: $pink;
   }
 }
