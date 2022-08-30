@@ -5,12 +5,12 @@ pagination:
     data: collections.posts
     alias: posts
     reverse: true
-    size: 10
+    size: 12
 ---
 {% set pageNumber = (pagination.pageNumber + 1) %}
 {% set pageLayout = 'subpage' %}
 
-<h1>Archive</h1>
+<h1>{{title}}</h1>
 <div class="article-wrapper">
 {% for post in posts%}
 <article aria-labelledby="{{post.fileSlug}}">
@@ -22,7 +22,7 @@ pagination:
       <ul class="taglist">
         {% for tag in post.data.tags %}
           {% if tag !== 'posts' %}
-            <li><a href="/tags/{{tag}}" class="post-tag">{{ tag }}</a></li>
+            <li><a href="/tags/{{tag}}" class="post-tag" aria-label="{{tag}} posts">{{ tag }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>

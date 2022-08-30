@@ -147,9 +147,9 @@ If you have control over the iframes content (which is usually not the case) try
 <div class="callout">
   <p>If you have an iframe that doesnt convey information to your users make sure that it is hidden with: </p>
   <ul>
-    <li><code>aria-hidden="true";</code></li>
-    <li><code>display: none;</code></li>
-    <li><code>visibility: hidden;</code></li>
+    <li><code aria-hidden="true">aria-hidden="true";</code></li>
+    <li><code aria-hidden="true">display: none;</code></li>
+    <li><code aria-hidden="true">visibility: hidden;</code></li>
   </ul>
 </div>
 
@@ -163,11 +163,11 @@ Ways you can make sure that things that convey critical info provide the word im
 `<blockquote>` should be used to designate long block level quotes, and should not be used for visual styling of non-quotation content. 
 While you need to wrap quotes in `<q>` tags you also need to include quotation marks since some screen readers do not read the `<q>` element
 
-### `<code>` and `<pre>`
-When you are wanting to display code in your document you should use the `<code>` element and visually style it differently. While screen readers do not support the code 
+### `<code aria-hidden="true">` and `<pre aria-hidden="true">`
+When you are wanting to display code in your document you should use the `<code aria-hidden="true">` element and visually style it differently. While screen readers do not support the code 
 element it does benefit sighted users and allow them to visualize technical terms and regular prose. 
 
-`<pre>` should be used to wrap around large blocks of code. This allows the code to be preformatted exactly as it appears in the code, spacing and all. 
+`<pre aria-hidden="true">` should be used to wrap around large blocks of code. This allows the code to be preformatted exactly as it appears in the code, spacing and all. 
 
 ### `<del>`, `<ins>`, and `<mark>`
 `<del>` will strike through text but it is not supported by screen readers. If there is critical text on the screen you must provide a text-based alternative method to inform the users that the text has been 'deleted'.

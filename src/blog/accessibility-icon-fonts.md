@@ -22,7 +22,7 @@ If you informative icon font does not have any text you must be sure that it has
     <i class="fa-solid fa-cat" aria-label="Cat" role="img" style="font-size: 2.5rem;"></i>
     
     <i class="fa-solid fa-cat" aria-label="Cat" role="img" ></i>
-   <p>Since there is a <code>role="img"</code> set screen readers will recognize this font as an image causing it to also read the <code>aria-label="Cat"</code> to its users.</p>
+   <p>Since there is a <code aria-hidden="true">role="img"</code> set screen readers will recognize this font as an image causing it to also read the <code aria-hidden="true">aria-label="Cat"</code> to its users.</p>
 </div>
 
 ### Bad informative icon font
@@ -30,7 +30,7 @@ If you informative icon font does not have any text you must be sure that it has
     <i class="fa-solid fa-dog" aria-label="Dog" style="font-size: 2.5rem;"></i>
     
     <i class="fa-solid fa-dog" aria-label="Dog"></i>
-   <p>Most screen readers will ignore the aria-label text in this example since this does not have a <code>role="img"</code> set.</p>
+   <p>Most screen readers will ignore the aria-label text in this example since this does not have a <code aria-hidden="true">role="img"</code> set.</p>
 </div>
 
 ## Actionable Icon fonts
@@ -52,7 +52,7 @@ If you have any actionable icon fonts without any accompanying visible test you 
         <i class="fa-solid fa-github" aria-label="github"></i>
     </a>
   
-   <p>Most screen readers will ignore the aria-label text in this example since this does not have a <code>role="img"</code> set.</p>
+   <p>Most screen readers will ignore the aria-label text in this example since this does not have a <code aria-hidden="true">role="img"</code> set.</p>
 </div>
 
 ### Buttons with icon fonts and `role="img"`

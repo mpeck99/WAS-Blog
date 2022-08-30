@@ -65,7 +65,7 @@ Another thing that is required but is a good thin gto keep in mind is to create 
 You can also create an alert for screen readers using visually hidden text via the CSS clip method, aria-label, aria-labelledby, or aria-describedby
 Navigation lists should also be created using the `<nav>` or `aria-role="navigation"` and its important to only label the main or most important ones and not to have to many. 
 <div class="callout">
-    <p><strong>Note: </strong>If you are using <code>role="navigation"</code>you need to assign it to a <code>div</code> that will then contain the list of navigation links. This will prevent the screen reader stripping the list of its semantic name</p>
+    <p><strong>Note: </strong>If you are using <code aria-hidden="true">role="navigation"</code>you need to assign it to a <code aria-hidden="true">div</code> that will then contain the list of navigation links. This will prevent the screen reader stripping the list of its semantic name</p>
 </div>
 
 ## Navigating within pages

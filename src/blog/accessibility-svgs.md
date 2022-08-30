@@ -63,7 +63,7 @@ Also you must add a meaningful and concise `<title>` element, that is the first 
 If there is any text that also is important and should be spoken by a screen reader it must be associated with the `<svg>` element using an `aria-labelledby`
 
 <div class="callout">
-    <p><strong>Note:</strong> You should not embed SVGs in an <code>object</code> or an <code>iframe</code> tag since they are very poorly supported by assistive technologies</p>
+    <p><strong>Note:</strong> You should not embed SVGs in an <code aria-hidden="true">object</code> or an <code aria-hidden="true">iframe</code> tag since they are very poorly supported by assistive technologies</p>
 </div>
 
 ## Text in SVGs

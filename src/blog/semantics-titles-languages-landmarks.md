@@ -54,7 +54,7 @@ Some of the most useful landmarks:
     <nav aria-label="Main Menu">
     <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="Archive">Archive</a></li>
+        <li><a href="posts">posts</a></li>
     </ul>
     </nav>
     <main>

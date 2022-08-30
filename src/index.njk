@@ -20,7 +20,7 @@ pagination:
       <ul class="taglist">
         {% for tag in post.data.tags %}
           {% if tag !== 'posts' %}
-            <li><a href="/tags/{{tag}}" class="post-tag">{{ tag }}</a></li>
+            <li><a href="/tags/{{tag}}" class="post-tag" aria-label="{{tag}} posts">{{ tag }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>

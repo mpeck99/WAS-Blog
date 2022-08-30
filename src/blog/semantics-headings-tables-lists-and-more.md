@@ -19,14 +19,14 @@ You need to ensure all things that should be headings are actual headings (h1, h
 
 <div class="example" aria-labelledby="heading-good-example" tabindex="0">
   <h2 id="heading-good-example">Good example of semantic headings</h2>
-  <pre>
-    <code>&lt;h2 id="heading-good-example">Good example of semantic headings&lt;/h2&gt;</code>
+  <pre aria-hidden="true">
+    <code aria-hidden="true">&lt;h2 id="heading-good-example">Good example of semantic headings&lt;/h2&gt;</code>
   </pre>
   <p>This heading is a good example of a semantic heading because it allows screen-reader users to be able to easily look for a heading/section of content since it appropriately marked up.</p>
 </div>
 <div class="example" aria-labelledby="heading-bad-example" tabindex="0">
   <p id="heading-bad-example">Heading that is not semantic</p>
-  <pre><code>&lt;p id="heading-bad-example">Heading that is not semantic&lt;/p&gt;</code></pre>
+  <pre aria-hidden="true"><code aria-hidden="true">&lt;p id="heading-bad-example">Heading that is not semantic&lt;/p&gt;</code></pre>
   <p>Looks like a heading isn't a heading. This heading isn't semantically set up as a real heading so it causes screen-readers to not notice it as an actual heading.</p>
 </div>
 
@@ -52,7 +52,7 @@ Any items that should be a list or if they are a group of links should be in one
       <li>List item 2</li>
       <li>List item 3</li>
     </ol>
-    <pre><code>&lt;ol>
+    <pre aria-hidden="true"><code aria-hidden="true">&lt;ol>
   &lt;li>List item 1&lt;/li>
   &lt;li>List item 2&lt;/li>
   &lt;li>List item 3&lt;/li>
@@ -64,7 +64,7 @@ Any items that should be a list or if they are a group of links should be in one
       <li>List item 2</li>
       <li>List item 3</li>
     </ul>
-    <pre><code>&lt;ul>
+    <pre aria-hidden="true"><code aria-hidden="true">&lt;ul>
   &lt;li>List item 1&lt;/li>
   &lt;li>List item 2&lt;/li>
   &lt;li>List item 3&lt;/li>
@@ -77,8 +77,8 @@ Any items that should be a list or if they are a group of links should be in one
           Some cool term definition
         </dd>
     </dl>
-    <pre>
-      <code>&lt;dl>
+    <pre aria-hidden="true">
+      <code aria-hidden="true">&lt;dl>
       &lt;dt>Term 1&lt;/dt>
         &lt;dd>
           Some cool term definition
@@ -91,7 +91,7 @@ Any items that should be a list or if they are a group of links should be in one
   <h2 id="list-bad-example">Bad semantic list</h2>
   <div class="row">
     <p>1. Bad list item<br>2. Bad list item<br>3. Bad list item</p>
-    <pre><code>&lt;p>1. Bad list item&lt;br&gt;<br>2. Bad list item&lt;br&gt;<br>3. Bad list item&lt;/p&gt;</code></pre>
+    <pre aria-hidden="true"><code aria-hidden="true">&lt;p>1. Bad list item&lt;br&gt;<br>2. Bad list item&lt;br&gt;<br>3. Bad list item&lt;/p&gt;</code></pre>
   </div>
 </div>
 
@@ -130,8 +130,8 @@ Tables are a beast in their own thing. They never truly will be 100% accessible 
       </tr>
     </tbody>
   </table>
-  <pre>
-    <code>
+  <pre aria-hidden="true">
+    <code aria-hidden="true">
     &lt;table class="table" tabindex="0" aria-labelledby="basic-table"&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -183,8 +183,8 @@ Tables are a beast in their own thing. They never truly will be 100% accessible 
     </tr>
   </tbody>
 </table>
-<pre>
-<code>
+<pre aria-hidden="true">
+<code aria-hidden="true">
 &lt;table  class="table table-colgroup" tabindex="0" aria-labelledby="group-headers"&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -207,7 +207,7 @@ Tables are a beast in their own thing. They never truly will be 100% accessible 
   &lt;/tbody&gt;
 &lt;/table&gt;
 </code>
-<pre>
+<pre aria-hidden="true">
 </div>
 
 <div class="example" aria-labelledby="complex">
@@ -238,8 +238,8 @@ Tables are a beast in their own thing. They never truly will be 100% accessible 
     </tbody>
   </table>
 
-  <pre>
-    <code>
+  <pre aria-hidden="true">
+    <code aria-hidden="true">
 &lt;table class="table-complex" tabindex="0" aria-labelledby="complex"&gt;
   &lt;thead&gt;
     &lt;tr&gt;

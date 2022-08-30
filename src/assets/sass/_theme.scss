@@ -11,6 +11,10 @@
         color: var(--clr-white);
       }
 
+      &.active {
+        color: var(--clr-yellow)
+      }
+
       &:hover,
       &:focus {
         color: var(--clr-yellow);
@@ -25,6 +29,7 @@
   a,
   a:visited {
     color: var(--clr-yellow);
+    
 
     &:hover,
     &:focus {

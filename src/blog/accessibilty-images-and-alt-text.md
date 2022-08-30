@@ -30,11 +30,11 @@ If you have an image that is purely for decoration you should hide the image wit
 Also if you have an image that conveys a lot of important information, there should be a supplementary long description for that image.
 
 <div class="callout">
-    <p><strong>Note:</strong> While there is no limit on how long your <code>alt</code> text can be its best practice to not allow it to exceed 150 characters. This is because of the following reasons: </p>
+    <p><strong>Note:</strong> While there is no limit on how long your <code aria-hidden="true">alt</code> text can be its best practice to not allow it to exceed 150 characters. This is because of the following reasons: </p>
     <ul>
         <li>Screen readers cannot resume where they left off if a user pauses in the middle of reading text</li>
         <li>Screen reader users cannot navigate the text (word by word)</li>
-        <li>Some older screen readers do not even read the full text of the <code>alt</code> text</li>
+        <li>Some older screen readers do not even read the full text of the <code aria-hidden="true">alt</code> text</li>
     </ul>
 </div>
 
@@ -146,7 +146,7 @@ Any images that are purely decorative or redundant CSS images **SHOULD NOT** hav
 Decorative images are images that do not convey important content, when these are used included an empty `alt=""` on the image and screen readers will ignore it. 
 
 <div class="callout">
-    <p><strong>Note:</strong> Be sure to include the <code>alt=""</code> tag even if its empty. If you do not include it then the screen reader will read the images title rather than ignoring it completely.</p>
+    <p><strong>Note:</strong> Be sure to include the <code aria-hidden="true">alt=""</code> tag even if its empty. If you do not include it then the screen reader will read the images title rather than ignoring it completely.</p>
 </div>
 
 ## Image maps
