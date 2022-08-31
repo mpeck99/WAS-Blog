@@ -36,4 +36,4 @@ tags: ['alt-text', 'HTML']
 </div>
 
 ## Screen-reader example
-<div class="iframe-wrapper"><iframe src="https://www.youtube.com/embed/n-1e57g7I1o" title="Image alternative text examples with a screen-reader" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+coming soon
