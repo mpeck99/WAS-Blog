@@ -2,7 +2,7 @@
 title: Making your HTML canvas elements accessible
 date: 2022-04-19
 intro: The canvas element renders data as pixels on a screen the same way as a .jpg or .png would. While it is supported in all browsers, it is not readily accessible to screen readers without adding some JavaScript, ARIA or having an internal fallback in the content.
-tags: ['accessibility', 'alt', 'HTML', 'Canvas']
+tags: ['accessibility', 'alt', 'HTML', 'Canvas', 'examples']
 ---
 
 The HTML `<canvas>` element renders as pixels on a screen and it renders the same way a .jpg or .png would. Its often used for HTML5 desktop and mobile game development. While it is supported in all browsers its not accessible to screen readers without adding JavaScript, ARIA, or having an internal fallback in the content placed within the opening and closing tags of the element. 
