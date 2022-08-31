@@ -7,20 +7,20 @@ tags: ['alt-text', 'HTML']
 <div class="example-wrapper">
 	<div class="example">
 		<h2 tabindex="0">Image with bad alternative text</h2>
-		<img tabindex="0" src="/assets/images/logo.png" alt="logo" />
-		<pre><code aria-hidden="true">&lt;img src="/assets/assets/images/logo.png" alt="logo" /&gt;</code></pre>
+		<img tabindex="0" src="/assets/images/mp-logo-angle-2-1.png" alt="logo" />
+		<pre><code aria-hidden="true">&lt;img src="/assets/assets/images/mp-logo-angle-2-1.png" alt="logo" /&gt;</code></pre>
 	</div>
 	<div class="example">
 		<h2 tabindex="0">Image with no alternative text</h2>
-		<img tabindex="0" src="/assets/images/logo-with-a-really-long-title.png" alt="src=/assets/images/logo-with-a-really-long-title.png"/>
-		<pre><code aria-hidden="true"> &lt;img src="/assets/assets/images/logo-with-a-really-long-title.png" /&gt; </code></pre>
+		<img tabindex="0" src="/assets/images/logo-with-a-long-title.png" alt="src=/assets/images/logo-with-a-long-title.png"/>
+		<pre><code aria-hidden="true"> &lt;img src="/assets/assets/images/logo-with-a-long-title.png" /&gt; </code></pre>
 	</div>
 	<div class="example">
 		<h2 tabindex="0">Image with appropriate alternative text</h2>
-		<img tabindex="0" src="/assets/images/logo.png" alt="Arkansas Blue Cross and Blue Shield" />
+		<img tabindex="0" src="/assets/images/mp-logo-angle-2-1.png" alt="Morgan Peck" />
 		<pre>
       <code aria-hidden="true"
-        >&lt;img src="/assets/assets/images/logo.png" alt="Arkansas Blue Cross and Blue Shield" /&gt;</code>
+        >&lt;img src="/assets/assets/images/mp-logo-angle-2-1.png" alt="Morgan Peck" /&gt;</code>
     </pre>
 	</div>
 	<div class="example">
