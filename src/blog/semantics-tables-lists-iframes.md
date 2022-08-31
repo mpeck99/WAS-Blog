@@ -2,7 +2,7 @@
 title: Importance of semantic HTML - Tables, Lists, Iframes and more!
 date: 2022-03-31
 intro: In this post I will go through some important things to keep in mind when building HTML tables, Lists, Iframes and more! 
-tags: ['accessibility', 'HTML', 'examples']
+tags: ['HTML', 'examples']
 ---
 ## Tables
 Tables are a create way to represent tabular data, but its important that you do not create fake tables (HTML structure that looks like a table but isnt semantically set up as a table). Tables should be marked up in a `<table>` element that is labelled with: 

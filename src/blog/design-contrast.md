@@ -2,7 +2,7 @@
 title: Accessibility and Contrast
 date: 2022-04-26
 intro: 1 in 12 people in the United States have some form of color deficiency, more commonly found in men (8%) than women (0.4%). Also there are roughly 3x more individuals who have low vision then there are with total blindness. This is why it is important to make sure that we have sufficient contrast between elements on our page.
-tags: ['design', 'accessibility', 'examples']
+tags: ['design', 'examples']
 ---
 
 In my last post I talked about color and its importance in making your site accessible for low vision user and users with color blindness. In this post I will focus more on the contrast side of design for accessibility. 

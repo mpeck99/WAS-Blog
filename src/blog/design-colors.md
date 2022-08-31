@@ -2,7 +2,7 @@
 title: Accessibility and Colors
 date: 2022-04-25
 intro: While building websites we must make sure that our HTML is semantically correct, but we also need to make sure that we are designing with accessibility in mind.
-tags: ['design', 'accessibility']
+tags: ['design']
 ---
 
 While building websites we must make sure that our HTML is semantically correct, but we also need to make sure that we are designing with accessibility in mind. This post I am going to discuss the important of color and what should or should'nt be done when designing a website to be accessible as possible. 

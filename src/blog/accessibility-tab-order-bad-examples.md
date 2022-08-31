@@ -2,7 +2,7 @@
 title: Bad Focus/Tab Order Example
 date: 2022-08-31 
 intro: A basic page to show how bad tab orders can affect a users experience. 
-tags: ['accessibility', 'HTML', 'examples']
+tags: ['HTML', 'examples']
 ---
 <p tabindex="0">Ensuring that your site can be navigated sequentially in a focus order that preserves the meaning and operability of your site is very important.</p> 
 

@@ -2,7 +2,7 @@
 title: All about captions
 date: 2022-06-09 
 intro: Captions are text-based versions of any content that is presented in an audible format. They can be used for audio-only or multimedia (audio & video) content to help those who are deaf or hard of hearing access the information being presented. Read more to learn more about captions and their importance in creating an accessible web. 
-tags: ['accessibility', 'captions', 'multimedia', 'hearing']
+tags: ['captions', 'multimedia', 'hearing']
 ---
 First let me start off explaining what captions are exactly. Captions are text-based versions that are used when content is presented in an audible format. By including captions for all of your audio-only or multimedia (audio + video) content you are ensuring that everyone can access your content. Some of the individuals who find captions helpful can be: 
 - Those who are hard of hearing

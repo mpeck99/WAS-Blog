@@ -2,7 +2,7 @@
 title: Scalable Vector Graphics (SVGs) and accessibility
 date: 2022-04-12 
 intro: Scalable Vector Graphics can help provide a number fo features to benefit individuals who experience low vision or color blindness. 
-tags: ['accessibility', 'alt', 'svgs', 'examples']
+tags: ['alt-text', 'svgs', 'examples']
 ---
 
 Scalable Vector Graphics or SVGs are two-dimensional, vector based graphics that are defined in Extensible Markup Language (XML) that was first introduced to the World Wide Web Consortium (W3C) in 1999. There is a variety of ways you can create an SVG but they usually are created using some form of graphic editing software, like Adobe. 

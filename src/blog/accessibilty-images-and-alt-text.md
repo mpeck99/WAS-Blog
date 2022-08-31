@@ -2,7 +2,7 @@
 title: Images & alternative text
 date: 2022-04-06
 intro: Some users may not be able to access images directly, so as developers we need to ensure that we are providing an HTML-based alternative for this content. 
-tags: ['accessibility', 'alt', 'images', 'examples']
+tags: ['alt-text', 'images', 'examples']
 ---
 
 Users who are blind cannot access our images directly, the will use their screen readers to listen to content and any alternative text that was left by the creator of the site/page. It is almost the same concept for those who are deaf-blind but rather than listening to the content the text is converted to a refreshable braille device for them to feel. As developers we need to make sure that any image on our site that provides meaningful content to the page has appropriate alternative text. In this post I will be focusing on images alone but look for my future posts that will focus on: 

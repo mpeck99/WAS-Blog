@@ -2,7 +2,7 @@
 title: All about audio descriptions
 date: 2022-06-13
 intro:  Audio descriptions help those who cannot see things in videos that have no audio content tied to them such as scenery, facial expressions, actions, and more. They can help provide this important information tho those who are blind. Read more about why they are needed and when to include them. 
-tags: ['accessibility', 'audio descriptions', 'multimedia', 'vision', 'deafblind']
+tags: ['audio descriptions', 'multimedia', 'vision', 'deafblind']
 ---
 Audio descriptions add experience for those who are blind by providing them descriptions of things that cannot be seen such as: 
 - Scenery

@@ -2,7 +2,7 @@
 title: All about transcripts
 date: 2022-06-13
 intro: Transcripts are very similar to captions but they extend on the spoken words by including any important sound effects or other visual descriptions that may not be provided via captions. These benefit the hard of hearing, deaf, and deafblind. For deafblind users transcripts are the only way for them to access the content. Read more to learn about transcripts are important, when to use them and how you should present them for your users. 
-tags: ['accessibility', 'transcripts', 'multimedia', 'hearing', 'deafblind']
+tags: ['transcripts', 'multimedia', 'hearing', 'deafblind']
 ---
 Transcripts are similar to but they extend beyond the spoken words. Transcripts include any important sound effects or other visual descriptions to those who: 
 - Are hard of hearing

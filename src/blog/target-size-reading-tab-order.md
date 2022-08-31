@@ -2,7 +2,7 @@
 title: Target size, Reading Order, and Tab Order
 date: 2022-04-26
 intro: When designing and developing a sites its important to keep the target size, tab order, and reading order in mind. 
-tags: ['design', 'accessibility']
+tags: ['design']
 ---
 When designing and developing a sites its important to keep the target size, tab order, and reading order in mind. 
 

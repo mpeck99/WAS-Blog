@@ -2,7 +2,7 @@
 title: Importance of semantic HTML - Titles, Languages, and Landmarks
 date: 2022-03-30
 intro: This week I have been going over the importance of semantic HTML. Some of the topics I will discuss in this blog post will be focused towards page titles, languages, and landmarks. 
-tags: ['accessibility', 'HTML']
+tags: ['HTML']
 ---
 This week I have been going over the importance of semantic HTML. Some of the topics I will discuss in this blog post will be focused towards page titles, languages, and landmarks. 
 ## Titles

@@ -2,7 +2,7 @@
 title: Icon fonts and accessibility
 date: 2022-04-18 
 intro: Icon fonts are fonts that contain symbols and glyphs rather than numbers or letters. Just like images we must ensure to apply some best practices to make them accessible to all our users.
-tags: ['accessibility', 'alt', 'svgs', 'icon-fonts']
+tags: ['alt-text', 'svgs', 'icon-fonts']
 ---
 ## What are Icon fonts?
 Icon fonts are fonts that contain symbols and glyphs rather than numbers or letters. They allow web developers to add lightweight, reusable images to their sites without the extra weight of an actual image. Icon fonts are vector images so they will scale well across various devices sizes and also will alow a user to customize its color. Just like images there are things you need to do to ensure that these icon fonts are accessible to all your users, read more below to find best practices. 

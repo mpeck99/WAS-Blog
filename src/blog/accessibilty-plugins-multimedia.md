@@ -2,7 +2,7 @@
 title: How to ensure your multimedia elements (video and audio) are accessible to your users
 date: 2022-04-21
 intro: Multimedia such as video, audio, objects, and documents can have their own accessibility challenges. There are somethings though we should do to ensure that our media is available and accessible to all types of users. 
-tags: ['accessibility', 'alt', 'HTML', 'Video', 'Audio']
+tags: ['alt-text', 'HTML', 'Video', 'Audio']
 ---
 ## Media accessibility methods
 - Captions

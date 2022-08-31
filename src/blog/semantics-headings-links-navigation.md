@@ -2,7 +2,7 @@
 title: Importance of semantic HTML - Headings, Links, and Navigation
 date: 2022-03-30
 intro: Having the appropriate mark up and functionality for headings, links and how your page navigate are important things to keep in mind when building out a site.  
-tags: ['accessibility', 'HTML']
+tags: ['HTML']
 ---
 ## Headings
 Headings help provide structure and organize the content on a page, as well as help improve your SEO. On every page there must be a **SINGLE** `<h1>` that will be located at the beginning of the main content page. This heading should be clear and provide an accurate description of what the user can expect on the page. 
