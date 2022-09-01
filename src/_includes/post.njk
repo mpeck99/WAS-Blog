@@ -3,13 +3,13 @@ layout: base.njk
 ---
 {%- set tagUrl %}/tags/{{ tag }}/{% endset -%} 
 <article aria-labelledby="title">
-  <!-- <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ul>
-      <li><a href="/" class="breadcrumb">Home</a></li>
-      <li><a href="/posts" class="breadcrumb">Posts</a></li>
+      <li class="breadcrumb"><a href="/" >Home</a></li>
+      <li class="breadcrumb"><a href="/posts" >Posts</a></li>
       <li aria-current="page" class="breadcrumb breadcrumb-current">{{title}}</li>
     </ul>
-  </nav> -->
+  </nav>
   <header>
     <h1 id="title">{{title}}</h1>
     <time> {{ page.date | postDate }}</time>
