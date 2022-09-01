@@ -15,11 +15,14 @@ If you provide link text that has ambiguous text like Click here, More, Here a u
 
 <div class="example" aria-labelledby="link-text-bad" tabindex="0">
   <h2 id="link-text-bad">Examples of bad link text</h2> <p>These two links to to the same location but they have different link text.</p>
+  <a href="contact.html">Our Company</a>
+<a href="contact.html">Contact Us</a>
   <pre aria-hidden="true"><code aria-hidden="true">&lt;a href="contact.html">Our Company&lt;/a>
 &lt;a href="contact.html">Contact Us&lt;/a></code></pre>
  
-
   <p>These two links to to the different locations but they have different link text.</p>
+  <a href="directory.html">Contact Us</a>
+  <a href="contact.html">Contact Us</a>
   <pre aria-hidden="true"><code aria-hidden="true">&lt;a href="directory.html">Contact Us&lt;/a>
 &lt;a href="contact.html">Contact Us&lt;/a></code></pre>
 </div>

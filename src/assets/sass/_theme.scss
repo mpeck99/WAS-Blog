@@ -54,6 +54,12 @@
 
     text-decoration: none;
   }
+
+  .example {
+    a {
+      color: var(--clr-pinkalt);
+    }
+  }
 }
 
 .theme-light {
