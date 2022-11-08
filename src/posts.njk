@@ -2,47 +2,38 @@
 layout: subpage.njk
 title: Posts
 pagination:
-    data: collections.posts
-    alias: posts
-    reverse: true
-    size: 12
+  data: collections.posts
+  alias: posts
+  reverse: true
+  size: 12
 ---
-{% set pageNumber = (pagination.pageNumber + 1) %}
-{% set pageLayout = 'subpage' %}
 
-<h1>{{title}}</h1>
+{% set pageNumber = (pagination.pageNumber + 1) %} {% set pageLayout = 'subpage' %}
+
+<h1>{{ title }}</h1>
 <div class="article-wrapper">
-{% for post in posts%}
-<article aria-labelledby="{{post.fileSlug}}">
-    <header class="article-header">
-      <h2 id="{{post.fileSlug}}">{{ post.data.title }}</h2>
-    <time> {{ post.date | postDate }}</time>
-    <div class="tags">
-      <h3>Tags:</h3>
-      <ul class="taglist">
-        {% for tag in post.data.tags %}
-          {% if tag !== 'posts' %}
-            <li><a href="/tags/{{tag}}" class="post-tag" aria-label="{{tag}} posts">{{ tag }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-    </header>
-    <div class="content">
-      <p>{{ post.data.intro }}</p>
-      <a class="btn btn-read-more" title="Read about {{post.data.title}}" href="{{ post.url }}" aria-label="Read more about {{post.data.title}}">Read more</a>
-    </div>
-</article> 
-{% endfor %}
+  {% for post in posts%}
+  <article aria-labelledby="{{ post.fileSlug }}">
+    <a href="{{ post.url }}">
+      <header class="article-header">
+        <h2 id="{{ post.fileSlug }}">{{ post.data.title }}</h2>
+        <time> {{ post.date | postDate }}</time>
+      </header>
+      <div class="content">
+        <p>{{ post.data.intro }}</p>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
 </div>
 <div class="pagination">
   {% if pageNumber != 1 %}
-    <a class="prev" href="{{ pagination.previousPageHref }}"> &lt; Previous</a>
-  {% endif %}
-  {% if pagination.hrefs.length != 1%}
-    <p>Page <span>{{pageNumber}} </span>of {{pagination.hrefs.length}}</p>
-  {% endif %}
-  {% if pageNumber != pagination.hrefs.length %}
-    <a class="next" href="{{ pagination.nextPageHref }}">Next &gt;</a>
+  <a class="prev" href="{{ pagination.previousPageHref }}"> &lt; Previous</a>
+  {% endif %} {% if pagination.hrefs.length != 1%}
+  <p>
+    Page <span>{{ pageNumber }} </span>of {{ pagination.hrefs.length }}
+  </p>
+  {% endif %} {% if pageNumber != pagination.hrefs.length %}
+  <a class="next" href="{{ pagination.nextPageHref }}">Next &gt;</a>
   {% endif %}
 </div>

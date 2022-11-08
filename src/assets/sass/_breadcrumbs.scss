@@ -6,7 +6,6 @@
 //     align-items: center;
 //     justify-content: flex-start;
 
-
 //     padding-left: 0;
 
 //     list-style-type: none;
@@ -68,51 +67,48 @@
 
 //     background-color: var(--clr-pinkalt);
 
-
 //     @media (min-width: 910px) {
 //       padding: 0 3rem;
 
 //       &:not(.breadcrumb-current) {
 //         position: relative;
-  
+
 //         &:before {
 //           content: '';
-  
+
 //           position: absolute;
 //           top:0;
 //           right: 0;
 //           bottom:100%;
 //           left: 99%;
-  
+
 //           z-index: 2;
-  
+
 //           border-left: 1rem solid var(--clr-pinkalt);
 //           border-top: 1rem solid transparent;
 //           border-bottom: 1rem solid transparent;
 //         }
-  
+
 //         &:after {
 //           content: '';
-  
+
 //           position: absolute;
 //           right: -0.6rem;
 //           left: 100%;
 //           top: -0.55rem;
 //           bottom: 100%;
-  
+
 //           z-index: 1;
-  
+
 //           border-left: 1.25rem solid var(--clr-black);
 //           border-top: 1.5rem solid transparent;
 //           border-bottom: 1.5rem solid transparent;
 //         }
-  
-       
+
 //       }
 //     }
 //   }
 // }
-
 
 .breadcrumbs {
   width: 100%;
@@ -127,18 +123,16 @@
   }
 
   li {
+    list-style: none;
 
-   list-style: none; 
-
-   margin-bottom: 2rem;
-    
+    margin-bottom: 2rem;
   }
 }
 
 .breadcrumb {
   display: flex;
   background: var(--clr-pinkalt);
-  
+
   position: relative;
 
   color: var(--clr-black);
@@ -186,23 +180,25 @@
       z-index: 1;
     }
 
-    &:hover, &:focus {
-      background-color: var(--clr-yellow);
-      &::after, &::before {
-        border-
-      }
-    }
+    // &:hover, &:focus {
+    //   background-color: var(--clr-yellow);
+    //   &::after, &::before {
+    //     border-
+    //   }
+    // }
   }
 
   &.breadcrumb-current {
     background: var(--clr-blue);
   }
 
-  a, a:visited {
+  a,
+  a:visited {
     color: var(--clr-black);
     text-decoration: none;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: var(--clr-black);
     }
   }

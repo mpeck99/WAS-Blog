@@ -3,33 +3,24 @@ title: Accessibility, What is that?
 layout: home.njk
 description: This blog is all about accessibility. What you can do, what you should'nt do, and why its important.
 pagination:
-    data: collections.posts
-    alias: posts
-    reverse: true
-    size: 6
+  data: collections.posts
+  alias: posts
+  reverse: true
+  size: 6
 ---
 
 <div class="article-wrapper">
-{% for post in posts %}
-<article aria-labelledby="{{post.fileSlug}}">
-    <header class="article-header">
-      <h2 id="{{post.fileSlug}}">{{ post.data.title }}</h2>
-    <time> {{ post.date | postDate }}</time>
-    <div class="tags"> 
-      <h3>Tags:</h3>
-      <ul class="taglist">
-        {% for tag in post.data.tags %}
-          {% if tag !== 'posts' %}
-            <li><a href="/tags/{{tag}}" class="post-tag" aria-label="{{tag}} posts">{{ tag }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-    </header>
-    <div class="content">
-      <p>{{ post.data.intro }}</p>
-      <a class="btn btn-read-more" href="{{ post.url }}" aria-label="Read more about {{post.data.title}}">Read more</a>
-    </div>
-</article> 
-{% endfor %}
+  {% for post in posts %}
+  <article aria-labelledby="{{ post.fileSlug }}">
+    <a href="{{ post.url }}">
+      <header class="article-header">
+        <h2 id="{{ post.fileSlug }}">{{ post.data.title }}</h2>
+        <time> {{ post.date | postDate }}</time>
+      </header>
+      <div class="content">
+        <p>{{ post.data.intro }}</p>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
 </div>
