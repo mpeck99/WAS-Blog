@@ -12,7 +12,7 @@
       }
 
       &.active {
-        color: var(--clr-yellow)
+        color: var(--clr-yellow);
       }
 
       &:hover,
@@ -26,10 +26,33 @@
     background: hsl(0, 0%, 25%);
   }
 
+  article {
+    a,
+    a:visited {
+      p {
+        font-weight: 400;
+      }
+      color: var(--clr-black);
+
+      &:hover,
+      &:focus {
+        color: var(--clr-black);
+      }
+
+      &.post-tag {
+        color: var(--clr-yellow);
+
+        &:hover,
+        &:focus {
+          color: var(--clr-pink);
+        }
+      }
+    }
+  }
+
   a,
   a:visited {
     color: var(--clr-yellow);
-    
 
     &:hover,
     &:focus {
@@ -43,11 +66,11 @@
 
     text-decoration: none;
   }
-  
+
   .btn-good {
     color: hsl(327, 44%, 22%);
 
-    border: 1px solid hsl(327, 44%, 22%); 
+    border: 1px solid hsl(327, 44%, 22%);
     border-radius: 0.25rem;
 
     padding: 0.25rem;
@@ -208,10 +231,6 @@
     pre {
       font-size: clamp(1.75rem, 6vw, 2rem);
     }
-  }
-
-  .btn-read-more {
-    font-size: clamp(2rem, 6vw, 2rem);
   }
 
   .social-media-list {

@@ -7,33 +7,24 @@ pagination:
 permalink: /tags/{{ tag }}/
 ---
 
-{% set postslistCounter = collections[tag] | length %} 
-{% set taglist = collections[ tag ] %}
-{% set pageNumber = (pagination.pageNumber + 1) %}
-{% set pageLayout = 'subpage' %}
+{% set postslistCounter = collections[tag] | length %} {% set taglist = collections[ tag ] %} {% set
+pageNumber = (pagination.pageNumber + 1) %} {% set pageLayout = 'subpage' %}
 
-<h1>{{postslistCounter}} post(s) tagged <span class="tag">“{{ tag }}”</span></h1>
+<h1>
+  {{ postslistCounter }} post(s) tagged <span class="tag">“{{ tag }}”</span>
+</h1>
 <div class="article-wrapper">
-{% for post in taglist | reverse %}
-<article aria-labelledby="{{post.fileSlug}}">
-    <header class="article-header">
-      <h2 id="{{post.fileSlug}}">{{ post.data.title }}</h2>
-      <time> {{ post.date | postDate }}</time>
-      <div class="tags"> 
-        <h3>Tags:</h3>
-        <ul class="taglist">
-          {% for tag in post.data.tags %}
-            {% if tag !== 'posts' %}
-              <li><a href="/tags/{{tag}}" class="post-tag" aria-label="{{tag}} posts">{{ tag }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+  {% for post in taglist | reverse %}
+  <article aria-labelledby="{{ post.fileSlug }}">
+    <a href="{{ post.url }}">
+      <header class="article-header">
+        <h2 id="{{ post.fileSlug }}">{{ post.data.title }}</h2>
+        <time> {{ post.date | postDate }}</time>
+      </header>
+      <div class="content">
+        <p>{{ post.data.intro }}</p>
       </div>
-    </header>
-    <div class="content">
-      <p>{{ post.data.intro }}</p>
-      <a class="btn btn-read-more" title="Read about {{post.data.title}}" href="{{ post.url }}" aria-label="Read more about {{post.data.title}}">Read more</a>
-    </div>
-</article> 
-{% endfor %}
+    </a>
+  </article>
+  {% endfor %}
 </div>
