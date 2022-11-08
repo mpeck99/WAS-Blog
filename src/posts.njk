@@ -13,7 +13,7 @@ pagination:
 <h1>{{ title }}</h1>
 <div class="article-wrapper">
   {% for post in posts%}
-  <article aria-labelledby="{{ post.fileSlug }}">
+  <article aria-labelledby="{{ post.fileSlug }}" class="article-collapsed">
     <a href="{{ post.url }}">
       <header class="article-header">
         <h2 id="{{ post.fileSlug }}">{{ post.data.title }}</h2>
