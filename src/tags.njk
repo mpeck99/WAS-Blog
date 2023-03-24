@@ -1,9 +1,9 @@
 ---
 layout: subpage.njk
 pagination:
-  data: collections
-  size: 1
-  alias: tag
+data: collections
+size: 1
+alias: tag
 permalink: /tags/{{ tag }}/
 ---
 
@@ -15,7 +15,7 @@ pageNumber = (pagination.pageNumber + 1) %} {% set pageLayout = 'subpage' %}
 </h1>
 <div class="article-wrapper">
   {% for post in taglist | reverse %}
-  <article aria-labelledby="{{ post.fileSlug }}" class="article-collapsed">
+  <article aria-labelledby="{{ post.fileSlug }}" class="article">
     <a href="{{ post.url }}">
       <header class="article-header">
         <h2 id="{{ post.fileSlug }}">{{ post.data.title }}</h2>

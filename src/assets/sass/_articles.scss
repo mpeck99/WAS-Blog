@@ -28,7 +28,7 @@
       margin: clamp(1rem, 0.818rem + 0.91vw, 1.5rem) 0;
     }
 
-    @media (min-width: 767px){
+    @media (min-width: 1200px){
       max-width: 33%;
     }
 
@@ -258,13 +258,13 @@ pre {
   }
 }
 
-.article-collapsed {
-  .content {
-    position: absolute;
-    bottom: 0;
+// .article-collapsed {
+//   .content {
+//     position: absolute;
+//     bottom: 0;
 
-    height: 0;
-    opacity: 0;
-    margin-bottom: clamp(2rem, 2rem + 0vw, 2rem);
-  }
-}
+//     height: 0;
+//     opacity: 0;
+//     margin-bottom: clamp(2rem, 2rem + 0vw, 2rem);
+//   }
+// }

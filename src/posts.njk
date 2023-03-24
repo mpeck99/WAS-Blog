@@ -2,10 +2,10 @@
 layout: subpage.njk
 title: Posts
 pagination:
-  data: collections.posts
-  alias: posts
-  reverse: true
-  size: 12
+data: collections.posts
+alias: posts
+reverse: true
+size: 12
 ---
 
 {% set pageNumber = (pagination.pageNumber + 1) %} {% set pageLayout = 'subpage' %}
@@ -13,7 +13,7 @@ pagination:
 <h1>{{ title }}</h1>
 <div class="article-wrapper">
   {% for post in posts%}
-  <article aria-labelledby="{{ post.fileSlug }}" class="article-collapsed">
+  <article aria-labelledby="{{ post.fileSlug }}" class="article">
     <a href="{{ post.url }}">
       <header class="article-header">
         <h2 id="{{ post.fileSlug }}">{{ post.data.title }}</h2>
