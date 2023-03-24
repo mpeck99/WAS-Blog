@@ -15,7 +15,6 @@ module.exports = function (eleventyConfig) {
         output: "public",
         templateFormats: ['md', '11ty.js', "njk"]
       },
-     
     };
 };
   
