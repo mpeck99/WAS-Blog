@@ -6,7 +6,7 @@
 
   article {
     min-height: 5rem;
-    max-width: 33%;
+    max-width: 100%;
 
     flex: 1 0 auto;
 
@@ -26,6 +26,10 @@
 
     @media (max-width: 767px) {
       margin: clamp(1rem, 0.818rem + 0.91vw, 1.5rem) 0;
+    }
+
+    @media (min-width: 767px){
+      max-width: 33%;
     }
 
     a {
