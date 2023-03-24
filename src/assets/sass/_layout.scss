@@ -21,6 +21,8 @@ body {
 
 main {
   flex: 1 0 auto;
+
+  overflow-x: hidden;
 }
 
 .site-header {
@@ -194,7 +196,7 @@ footer {
 // Home page - Banner
 .banner {
   min-height: 12rem;
-  max-width: 100%;
+  width: calc(100% - 4rem);
 
   display: flex;
   flex-direction: column;
