@@ -235,6 +235,8 @@ footer {
 
 .layout-subpage {
   article {
+    display: flex;
+    flex-direction: column;
     &:only-child {
       max-width: 20rem;
     }
