@@ -9,6 +9,8 @@
     min-height: 5rem;
     max-width: 100%;
 
+    display: flex;
+    flex-direction: column;
     flex: 1 0 auto;
 
     padding: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
