@@ -3,6 +3,7 @@ title: Starting my WAS Certification Journey
 date: 2022-02-09
 intro: Hello all! My name is Morgan Peck and welcome to my blog detailing my journey in earning my Web Accessibility Specialist certification through IAAP.
 tags: ['deque', 'WAS', 'IAAP']
+btn: Read more about my WAS journey
 ---
 Hello all! My name is Morgan Peck and welcome to my blog detailing my journey in earning my [Web Accessibility Specialist certification through IAAP](https://www.accessibilityassociation.org/wascertification). 
 

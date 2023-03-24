@@ -1,7 +1,8 @@
 ---
 title: Semantic HTML  - Headings, Tables, Lists, and more.
 date: 2022-08-28
-intro: In a past post I went into the hierarchial levels of headings but there are some more best practices and examples I wish to share. Also tables, lists, paragraphs all need to be semantically marked up to ensure that our users can access the information on our site as easily as possible.
+intro: Headings, tables, lists, paragraphs all need to be semantically marked up to ensure that our users can access the information on our site as easily as possible.
+btn: Read more about semantic headings, tables, etc.
 tags: ['HTML', 'semantics', 'examples']
 ---
 
@@ -268,7 +269,6 @@ Tables are a beast in their own thing. They never truly will be 100% accessible 
   </pre>
 </div>
 
-
 ## Other content
 
 Its important that we ensure that all our text is in the correct HTMl. If we have any paragraph text we need to ensure that it is wrapped in `<p>` tags to ensure screen-readers are able to access the content when a user tabs into them. If they are'nt properly marked up then our screen-reader users will have no way to access our content, and thats not very cool
@@ -282,4 +282,3 @@ If there is any text that should be visually emphasized be sure to use HTMl mark
   <p tabindex="0">This paragraph is inside of the correct HTML</p>
   <div tabindex="0">This paragraph is not.</div> 
 </div>
-

@@ -2,6 +2,7 @@
 title: Accessibility, What is that?
 layout: home.njk
 description: This blog is all about accessibility. What you can do, what you should'nt do, and why its important.
+btn: Read more
 pagination: 
   data: collections.posts
   alias: posts
@@ -19,7 +20,7 @@ pagination:
       </header>
       <div class="content">
         <p>{{ post.data.intro }}</p>
-        <p><strong>Click to read more</strong></p>
+        <p><strong>{{ post.data.btn }}</strong></p>
       </div>
     </a>
   </article>

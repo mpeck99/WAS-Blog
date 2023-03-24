@@ -2,6 +2,7 @@
 title: Alternative image text examples
 date: 2022-08-31
 intro: Here is a page with some examples of images and text alternatives to showcase how a screen-reader will read/interpret them.
+btn: Read more about alternative text
 tags: ['alt-text', 'HTML']
 ---
 <div class="example-wrapper">
