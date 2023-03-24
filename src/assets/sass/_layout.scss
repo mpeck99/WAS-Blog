@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  height: 100vh;
+  // height: 100vh;
 
   margin: 0;
 
@@ -194,7 +194,7 @@ footer {
 // Home page - Banner
 .banner {
   min-height: 12rem;
-  min-width: 98.5vw;
+  max-width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -203,7 +203,7 @@ footer {
 
   position: relative;
 
-  padding: 3rem 0;
+  padding: clamp(1rem, 0.614rem + 2.18vw, 2rem);
 
   text-align: center;
 
