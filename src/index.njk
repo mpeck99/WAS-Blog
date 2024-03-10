@@ -1,8 +1,7 @@
 ---
-title: Accessibility, What is that?
+title: Code, Accessibility, and UX Unleashed!
 layout: home.njk
-description: This blog is all about accessibility. What you can do, what you should'nt do, and why its important.
-btn: Read more
+description: Welcome to my web development wonderland! Let's embark on a journey through code, accessibility, UX, and more. Join me in crafting digital realms where every pixel has a purpose and every line of code tells a story. Ready for a byte-sized adventure in the world of web wizardry?
 pagination: 
   data: collections.posts
   alias: posts
@@ -20,7 +19,7 @@ pagination:
       </header>
       <div class="content">
         <p>{{ post.data.intro }}</p>
-        <p class="read-more"><strong>{{ post.data.btn }}</strong></p>
+        <p class="read-more"><strong>Read more <span class="sr-only"> about {{ post.data.title }}</span></strong></p>
       </div>
     </a>
   </article>
