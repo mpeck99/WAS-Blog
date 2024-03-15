@@ -4,6 +4,7 @@ date: 2024-03-15
 intro: Discover the essentials of mastering reading order, tag usage, and accessibility standards in document creation. This blog post dives into key aspects such as document remediation rules, efficient reading order management, hierarchical headings, tag creation, consistency, and compliance verification. Equip yourself with the knowledge to create inclusive and accessible content effectively.
 tags: ['CommonLook', 'training']
 ---
+
 # CommonLook Training: Reading Order and Tags for Document Accessibility
 
 In the realm of document accessibility, understanding the intricacies of reading order and tags is key to creating inclusive content. CommonLook, a leading tool in this domain, offers comprehensive training on these vital aspects. Let's dive into the core concepts and best practices outlined in CommonLook's training program.
