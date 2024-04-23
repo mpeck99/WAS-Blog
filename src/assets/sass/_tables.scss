@@ -1,5 +1,5 @@
 // Tables
-.table {
+.table, table {
   margin-bottom: 1rem;
 
   border-collapse: collapse;
@@ -13,7 +13,13 @@
   th,
   td {
     padding: 0.5rem;
-    border: solid --clr-white 2px;
+    border: solid var(--clr-black) 2px;
+  }
+
+  tbody {
+    background-color: var(--clr-white);
+
+    color: var(--clr-black);
   }
 }
 

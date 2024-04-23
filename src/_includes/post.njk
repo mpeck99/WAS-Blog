@@ -13,7 +13,7 @@ layout: base.njk
   <header>
     <h1 id="title">{{title}}</h1>
     <time> {{ page.date | postDate }}</time>
-    <div class="tags">
+    <!-- <div class="tags">
       <h2>Tags:</h2>
       <ul class="taglist">
         {% for tag in tags %}
@@ -22,7 +22,7 @@ layout: base.njk
           {% endif %}
         {% endfor %}
       </ul>
-    </div>
+    </div> -->
   </header>
   <div class="content">
     {{ content | safe }}

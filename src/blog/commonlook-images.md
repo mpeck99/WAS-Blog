@@ -22,7 +22,7 @@ When adding alternative text, ask yourself what's crucial about the graphic and 
 
 ## Captions & Figures
 
-Use the `caption` tag for grouping text with graphical elements. If converting a paragraph tag to a caption, first convert it to a `span` tag (Ctrl + Shift + W), then insert the span into a caption (Ctrl + Q). Ensure that important graphics are within `figure` tags.
+Use the `caption` tag for grouping text with graphical elements. If converting a paragraph tag to a caption, first convert it to a `span` tag (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd>), then insert the span into a caption (<kbd>Ctrl</kbd>+<kbd>Q</kbd>). Ensure that important graphics are within `figure` tags.
 
 ## Math Formulas
 

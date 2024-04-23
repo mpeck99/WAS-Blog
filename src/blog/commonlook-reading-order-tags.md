@@ -31,36 +31,35 @@ CommonLook simplifies the process of creating and inserting new tags, making it 
 
 **Ctrl Shortcuts:**
 
-- Ctrl + 7: Paragraphs
-- Ctrl + (1-6): Headings (1 to 6)
-- Ctrl + G: Figure
-- Ctrl + Q: Caption
-- Ctrl + D: TD (Table Data)
-- Ctrl + I: LI (List Item)
-- Ctrl + L: LBL (List Label)
-- Ctrl + B: LBody (List Body)
-- Ctrl + W: Span
-- Ctrl + K: Link
-- Ctrl + 8: Form
-- Ctrl + O: TOCI (Tagged Panel Only)
-- Ctrl + N: Note
-- Ctrl + R: Reference
-- Ctrl + T: Generates Table
-- Ctrl + 9: Generates List
-- Ctrl + 0: Generates Table of Contents
-- Ctrl + O: Tag Annotations (Untagged Content Panel Only)
-- Ctrl + T: Tag (Untagged Content Panel Only)
+- <kbd>Ctrl</kbd>+<kbd>7</kbd>: Paragraphs
+- <kbd>Ctrl</kbd>+<kbd>(1-6)</kbd>: Headings (1 to 6)
+- <kbd>Ctrl</kbd>+<kbd>G</kbd>: Figure
+- <kbd>Ctrl</kbd>+<kbd>Q</kbd>: Caption
+- <kbd>Ctrl</kbd>+<kbd>D</kbd>: TD (Table Data)
+- <kbd>Ctrl</kbd>+<kbd>I</kbd>: LI (List Item)
+- <kbd>Ctrl</kbd>+<kbd>L</kbd>: LBL (List Label)
+- <kbd>Ctrl</kbd>+<kbd>B</kbd>: LBody (List Body)
+- <kbd>Ctrl</kbd>+<kbd>W</kbd>: Span
+- <kbd>Ctrl</kbd>+<kbd>K</kbd>: Link
+- <kbd>Ctrl</kbd>+<kbd>8</kbd>: Form
+- <kbd>Ctrl</kbd>+<kbd>O</kbd>: TOCI (Tagged Panel Only)
+- <kbd>Ctrl</kbd>+<kbd>N</kbd>: Note
+- <kbd>Ctrl</kbd>+<kbd>R</kbd>: Reference
+- <kbd>Ctrl</kbd>+<kbd>T</kbd>: Generates Table
+- <kbd>Ctrl</kbd>+<kbd>9</kbd>: Generates List
+- <kbd>Ctrl</kbd>+<kbd>0</kbd>: Generates Table of Contents
+- <kbd>Ctrl</kbd>+<kbd>O</kbd>: Tag Annotations (Untagged Content Panel Only)
+- <kbd>Ctrl</kbd>+<kbd>T</kbd>: Tag (Untagged Content Panel Only)
 
 **Alt Shortcuts:**
 
-- Alt + (Corresponding Tag): Various tag shortcuts
-  - Alt + I + B: Table (in sequentially not a combo)
-  - Alt + I + R: TR (in sequentially not a combo)
-  - Alt + I + H: TH (in sequentially not a combo)
-  - Alt + I + L: List (in sequentially not a combo)
-  - Alt + I + O7: Revered Characters (in sequentially not combo)
-  - Alt + I + W: Pagination (sequentially not in combo)
-  - Alt + I + 0: User Tags (sequentially not in combo)
+- <kbd>Alt</kbd>+<kbd>I</kbd>+<kbd>B</kbd>: Table (in sequentially not a combo)
+- <kbd>Alt</kbd>+<kbd>I</kbd>+<kbd>R</kbd>: TR (in sequentially not a combo)
+- <kbd>Alt</kbd>+<kbd>I</kbd>+<kbd>H</kbd>: TH (in sequentially not a combo)
+- <kbd>Alt</kbd>+<kbd>I</kbd>+<kbd>L</kbd>: List (in sequentially not a combo)
+- <kbd>Alt</kbd>+<kbd>I</kbd>+<kbd>O</kbd>7: Revered Characters (in sequentially not combo)
+- <kbd>Alt</kbd>+<kbd>I</kbd>+<kbd>W</kbd>: Pagination (sequentially not in combo)
+- <kbd>Alt</kbd>+<kbd>I</kbd>+<kbd>0</kbd>: User Tags (sequentially not in combo)
 
 ## Converting Tags for Consistency
 
@@ -70,42 +69,40 @@ Consistency in tag usage is paramount for document accessibility. CommonLook pro
 
 **Ctrl + Shift Shortcuts:**
 
-- Ctrl + Shift + (Corresponding Element Shortcut)
-    + 7: Paragraph Tag
-    + (1-6): Convert to Corresponding Heading Level
-    + G: Figure
-    + Q: Caption
-    + D: TD (Table Data)
-    + I: LI (List Item)
-    + L: LBL (List Label)
-    + B: LBody (List Body)
-    + W: Span
-    + K: Link
-    + 8: Form
-    + O: TOCI (Tagged Panel Only)
-    + N: Note
-    + R: Reference
-    + T: Generates Table
-    + 9: Generates List
-    + 0: Generates Table of Contents
-    + O: Tag Annotations (Untagged Content Panel Only)
-    + T: Tag (Untagged Content Panel Only)
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>7</kbd>: Paragraph Tag
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>(1-6)</kbd>: Convert to Corresponding Heading Level
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>: Figure
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd>: Caption
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>: TD (Table Data)
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>: LI (List Item)
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd>: LBL (List Label)
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>: LBody (List Body)
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd>: Span
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>: Link
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>8</kbd>: Form
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd>: TOCI (Tagged Panel Only)
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>: Note
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>: Reference
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>: Generates Table
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd>: Generates List
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>: Generates Table of Contents
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd>: Tag Annotations (Untagged Content Panel Only)
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>: Tag (Untagged Content Panel Only)
 
 **Alt + Shift Shortcuts:**
 
-- Alt + Shift + (Corresponding Tag)
-    + I + B: Table (Sequentially Not a Combo)
-    + I + R: TR (Sequentially Not a Combo)
-    + I + H: TH (Sequentially Not a Combo)
-    + I + L: List (Sequentially Not a Combo)
-    + I + O7: Revered Characters (Sequentially Not Combo)
-    + I + W: Pagination (Sequentially Not in Combo)
-    + I + 0: User Tags (Sequentially Not in Combo)
+<kbd>Alt</kbd>+<kbd>Shift</kbd><kbd>+I</kbd><kbd>+B</kbd>: Table (Sequentially Not a Combo)
+<kbd>Alt</kbd>+<kbd>Shift</kbd><kbd>+I</kbd><kbd>+R</kbd>: TR (Sequentially Not a Combo)
+<kbd>Alt</kbd>+<kbd>Shift</kbd><kbd>+I</kbd><kbd>+H</kbd>: TH (Sequentially Not a Combo)
+<kbd>Alt</kbd>+<kbd>Shift</kbd><kbd>+I</kbd><kbd>+L</kbd>: List (Sequentially Not a Combo)
+<kbd>Alt</kbd>+<kbd>Shift</kbd><kbd>+I</kbd><kbd>+O7</kbd>: Revered Characters (Sequentially Not Combo)
+<kbd>Alt</kbd>+<kbd>Shift</kbd><kbd>+I</kbd><kbd>+W</kbd>: Pagination (Sequentially Not in Combo)
+<kbd>Alt</kbd>+<kbd>Shift</kbd><kbd>+I</kbd><kbd>+0</kbd>: User Tags (Sequentially Not in Combo)
 
 **Additional Shortcuts:**
 
-- Ctrl + C: Converts TH to Scope of Column when focused on a cell, cells, or in table editor
-- Ctrl + R: Converts TH to Set the Scope of Row when focused on a cell, cells, or in table editor
+<kbd>Ctrl</kbd>+<kbd>C</kbd>: Converts TH to Scope of Column when focused on a cell, cells, or in table editor
+<kbd>Ctrl</kbd>+<kbd>R</kbd>: Converts TH to Set the Scope of Row when focused on a cell, cells, or in table editor
 
 
 
